@@ -5,7 +5,6 @@ from cryptography.fernet import Fernet
 from app.core.config import settings
 
 log = logging.getLogger(__name__)
-
 _fernet: Fernet | None = None
 
 
@@ -14,7 +13,7 @@ def fernet() -> Fernet:
     if _fernet is None:
         key = settings.ENCRYPTION_KEY
         if not key:
-            log.warning("encryption key not set in config — generating a temporary one ")
+            log.warning("encryption key not set in config — generating a temporary one")
             key = Fernet.generate_key().decode()
         try:
             _fernet = Fernet(key.encode() if isinstance(key, str) else key)
@@ -26,6 +25,7 @@ def fernet() -> Fernet:
 def encrypt(text: str) -> str:
     return fernet().encrypt(text.encode()).decode() if text else ""
 
+
 def decrypt(token: str) -> str:
     if not token:
         return ""
@@ -34,8 +34,10 @@ def decrypt(token: str) -> str:
     except Exception:
         return ""
 
+
 def encrypt_json(data: list | dict) -> str:
     return encrypt(json.dumps(data, ensure_ascii=False))
+
 
 def decrypt_json(token: str) -> list | dict:
     raw = decrypt(token)
@@ -48,19 +50,14 @@ def decrypt_json(token: str) -> list | dict:
 
 
 PII_PATTERNS = [
-    (r"\b[12]\d{9}\b",                                    "[NATIONAL_ID]"),
-    (r"\b\d{1,2}/\d{1,2}/\d{2,4}\b",                    "[DATE]"),
-    (r"\b\d{4}-\d{2}-\d{2}\b",                           "[DATE]"),
-    (r"\b(?:\+966|00966|0)?5\d{8}\b",                   "[PHONE]"),
-    (r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+", "[EMAIL]"),
-    (r"\bSA\d{22}\b",                                     "[IBAN]"),
-    (r"(?<=المستأجر[:\s])\S+",                            "[PARTY]"),
-    (r"(?<=المؤجر[:\s])\S+",                              "[PARTY]"),
-    (r"(?<=صاحب العمل[:\s])\S+",                         "[PARTY]"),
-    (r"(?<=العامل[:\s])\S+",                              "[PARTY]"),
-    (r"(?<=الطرف الأول[:\s])\S+",                        "[PARTY]"),
-    (r"(?<=الطرف الثاني[:\s])\S+",                       "[PARTY]"),
+
+    (r"\b[12]\d{9}\b",                                     "[NATIONAL_ID]"),
+    (r"\b(?:\+966|00966|0)?5\d{8}\b",                    "[PHONE]"),
+    (r"[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+",  "[EMAIL]"),
+    (r"\bSA\d{22}\b",                                      "[IBAN]"),
+
 ]
+
 
 def redact_pii(text: str) -> str:
     for pattern, replacement in PII_PATTERNS:
