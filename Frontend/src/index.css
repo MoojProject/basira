@@ -1,0 +1,90 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+:root {
+  --color-eclipse: #0F2A34;
+  --color-eclipse-2: #163A45;
+  --color-eclipse-3: #2E515B;
+  --color-matcha: #C2A878;
+  --color-matcha-light: #A88F60;
+  --color-matcha-dim: #8A7550;
+  --color-cream: #F5F7F6;
+  --color-cream-dim: #C7D1CE;
+  --color-cream-muted: #6B7D75;
+  --color-safe: #4A9C6E;
+  --color-warn: #C98840;
+  --color-danger: #C94040;
+  --color-bg: var(--color-eclipse);
+  --color-card: var(--color-eclipse-2);
+  --color-text: var(--color-cream);
+  --color-text-light: var(--color-cream-dim);
+  --color-border: var(--color-eclipse-3);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  direction: rtl;
+}
+body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+#root {
+  min-height: 100vh;
+}
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-eclipse);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-matcha-dim);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-matcha);
+}
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-ring {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+.animate-pulse-ring {
+  animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
+.animate-spin-slow {
+  animation: spin-slow 2s linear infinite;
+}

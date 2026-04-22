@@ -1,0 +1,652 @@
+[
+  {
+    "field": "confidential_information_definition",
+    "title_ar": "تعريف المعلومات السرية",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "نزاع حول ما يُعدّ سرياً وما لا يُعدّ",
+    "description": "تحديد ما تعتبره الاتفاقية معلومات سرية كالبيانات المالية والتقنية وقوائم العملاء والمعلومات التشغيلية.",
+    "keywords": "معلومات سرية، تعريف، بيانات، قوائم العملاء، معلومات تقنية، confidential information، definition، trade secret، proprietary information",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثانية والسبعون (محل الالتزام)"
+  },
+  {
+    "field": "non_disclosure_obligation",
+    "title_ar": "الالتزام بعدم الإفصاح",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "غياب الالتزام الصريح بحفظ السرية",
+    "description": "يلتزم الطرف المستلم بعدم كشف أو نشر أو مشاركة المعلومات السرية مع أي طرف غير مصرح له.",
+    "keywords": "عدم الإفصاح، سرية، NDA، التزام، non disclosure، confidentiality obligation، prohibition، secrecy",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة والتسعون (آثار العقد)"
+  },
+  {
+    "field": "confidential_information_use_scope",
+    "title_ar": "استخدام المعلومات السرية للغرض المتفق عليه",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "استخدام المعلومات لأغراض غير مصرح بها",
+    "description": "تستخدم المعلومات السرية فقط في نطاق العمل أو المشروع أو الغرض المحدد في الاتفاقية.",
+    "keywords": "استخدام المعلومات، نطاق الاستخدام، غرض، scope of use، purpose limitation، permitted use، authorized purpose",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الثالثة (الغرض من المعالجة)"
+  },
+  {
+    "field": "confidentiality_exceptions",
+    "title_ar": "استثناءات السرية",
+    "category": "confidentiality_restrictions",
+    "required": "لا",
+    "risk_if_missing": "تطبيق السرية على معلومات عامة مما يعرض الاتفاقية للطعن",
+    "description": "تحدد الحالات التي لا تعتبر فيها المعلومات سرية كالمعلومات العامة أو المطورة بشكل مستقل أو المطلوبة نظاماً.",
+    "keywords": "استثناءات السرية، معلومات عامة، مستقلة، confidentiality exceptions، public information، general knowledge، exclusions",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة السادسة (حالات الإفصاح المسموح)"
+  },
+  {
+    "field": "return_or_destroy_confidential_material",
+    "title_ar": "إعادة أو إتلاف المعلومات والمستندات السرية",
+    "category": "confidentiality_restrictions",
+    "required": "لا",
+    "risk_if_missing": "بقاء المعلومات السرية في حيازة الطرف المستلم بعد انتهاء الاتفاقية",
+    "description": "يلتزم الطرف المستلم بإعادة أو إتلاف المعلومات والمستندات السرية عند انتهاء العلاقة أو عند طلب الطرف المالك.",
+    "keywords": "إعادة المستندات، إتلاف المعلومات، return confidential material، destroy confidential information، document destruction، material return",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الثامنة عشرة (إتلاف البيانات)"
+  },
+  {
+    "field": "intellectual_property_ownership",
+    "title_ar": "ملكية المعلومات والملكية الفكرية",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "نزاع على ملكية الأفكار أو المخرجات الناتجة عن تبادل المعلومات",
+    "description": "تبقى ملكية المعلومات السرية والحقوق الفكرية المرتبطة بها للطرف المالك لها، ولا ينتج عن الإفصاح أي نقل للملكية.",
+    "keywords": "ملكية فكرية، intellectual property، ownership، confidential information، no transfer، proprietary rights، IP ownership",
+    "reference": "نظام الملكية الفكرية (الهيئة السعودية للملكية الفكرية) — المادة الثالثة (الملكية المشتركة)"
+  },
+  {
+    "field": "representatives_confidentiality",
+    "title_ar": "التزام الموظفين والممثلين بالسرية",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "تسريب المعلومات من موظفين أو مستشارين غير ملزمين",
+    "description": "يلتزم موظفو أو مستشارو الطرف المستلم بالحفاظ على سرية المعلومات بنفس مستوى الطرف المستلم.",
+    "keywords": "ممثلون، موظفون، مستشارون، representatives، employees، confidentiality، agents، advisors، bound parties",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الثالثة (اختيار جهة المعالجة)"
+  },
+  {
+    "field": "copy_or_reproduce_restriction",
+    "title_ar": "منع نسخ أو تصوير المعلومات",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "انتشار نسخ من المعلومات السرية خارج نطاق التحكم",
+    "description": "يمنع نسخ أو تصوير أو إعادة استخدام المعلومات السرية دون إذن صريح من الطرف المالك.",
+    "keywords": "نسخ، تصوير، copy، reproduce، information protection، duplication، unauthorized copying، replication",
+    "reference": "نظام مكافحة الجرائم المعلوماتية (م/17 لعام 1428هـ) — المادة الثالثة"
+  },
+  {
+    "field": "data_deletion_after_purpose",
+    "title_ar": "حذف البيانات بعد انتهاء الغرض منها",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "احتفاظ بيانات شخصية بعد انتهاء مسوّغها النظامي",
+    "description": "على جهة التحكم إتلاف البيانات الشخصية بعد انتهاء الغرض من جمعها ما لم يوجد مسوّغ نظامي للاحتفاظ بها.",
+    "keywords": "إتلاف البيانات، حذف البيانات، deletion، end of purpose، data destruction، purge، dispose of data",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الثامنة عشرة"
+  },
+  {
+    "field": "data_retention_policy",
+    "title_ar": "سياسة الاحتفاظ بالبيانات",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "الاحتفاظ بالبيانات دون مسوّغ نظامي أو مخالفة نظام حماية البيانات",
+    "description": "يجوز الاحتفاظ بالبيانات الشخصية بعد انتهاء الغرض إذا وجد مسوّغ نظامي أو كانت مرتبطة بقضية منظورة.",
+    "keywords": "الاحتفاظ بالبيانات، retention policy، data retention، storage period، legal hold، retention schedule",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الثامنة عشرة"
+  },
+  {
+    "field": "personal_data_security_measures",
+    "title_ar": "إجراءات حماية البيانات الشخصية",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "تسريب أو اختراق بيانات شخصية بسبب غياب الإجراءات التقنية",
+    "description": "على جهة التحكم اتخاذ ما يلزم من إجراءات تنظيمية وإدارية وتقنية لضمان المحافظة على البيانات الشخصية.",
+    "keywords": "حماية البيانات، إجراءات أمنية، security measures، data protection، technical safeguards، organizational measures، encryption",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة التاسعة عشرة"
+  },
+  {
+    "field": "post_employment_data_confidentiality",
+    "title_ar": "الالتزام بسرية البيانات بعد انتهاء العلاقة الوظيفية أو التعاقدية",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "تسريب بيانات بعد انتهاء العلاقة لعدم وجود التزام صريح",
+    "description": "يلتزم من يباشر أعمال معالجة البيانات الشخصية بالمحافظة على الأسرار حتى بعد انتهاء علاقته الوظيفية أو التعاقدية.",
+    "keywords": "سرية بعد انتهاء العلاقة، post employment confidentiality، data secrecy، after termination، continuing obligation، survival",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الحادية والأربعون"
+  },
+  {
+    "field": "confidentiality",
+    "title_ar": "السرية والمحافظة على الأسرار",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "تسريب أسرار المنشأة وضياع حقوقها",
+    "description": "يلتزم الطرف المستلم بعدم إفشاء أسرار العمل أو بيانات المنشأة أو البيانات الشخصية التي يطلع عليها أثناء العقد وبعد انتهائه.",
+    "keywords": "سرية، أسرار، خصوصية، بيانات، confidentiality، trade secrets، proprietary information، non-disclosure، secrecy obligation",
+    "reference": "نظام العمل (م/51 لعام 1426هـ) — المادة الثالثة والثمانون، الفقرة 2"
+  },
+  {
+    "field": "non_compete_clause",
+    "title_ar": "شرط عدم المنافسة",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "منافسة غير مشروعة بعد انتهاء العلاقة",
+    "description": "يجوز لصاحب العمل اشتراط عدم منافسة العامل بعد انتهاء العقد ضمن حدود محددة من حيث الزمان والمكان ونوع العمل بحد أقصى سنتين.",
+    "keywords": "عدم المنافسة، non compete، non-competition، post-employment restriction، competitive restriction، restraint of trade",
+    "reference": "نظام العمل (م/51 لعام 1426هـ) — المادة الثالثة والثمانون، الفقرة 1"
+  },
+  {
+    "field": "confidentiality_violation",
+    "title_ar": "مخالفة السرية والبيانات",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "غياب الجزاء القانوني الرادع عند الإخلال",
+    "description": "إفشاء أسرار العمل أو البيانات الداخلية يعرض المخالف للمساءلة القانونية وفق نظام العمل مع حق صاحب العمل في رفع دعوى خلال سنة.",
+    "keywords": "مخالفة السرية، إفشاء الأسرار، جزاء، confidentiality violation، breach، legal liability، enforcement، penalty",
+    "reference": "نظام العمل (م/51 لعام 1426هـ) — المادة الثالثة والثمانون، الفقرة 3"
+  },
+  {
+    "field": "nda_breach_consequences",
+    "title_ar": "الإخلال بالاتفاقية والتعويض",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "عدم وجود آلية واضحة للتعويض عند الخرق",
+    "description": "في حال خرق الاتفاقية يحق للطرف المتضرر المطالبة بالتعويض واتخاذ الإجراءات القانونية المناسبة.",
+    "keywords": "إخلال، breach، violation، تعويض، compensation، damages، legal action، consequences، liability",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة السابعة بعد المائة (الإخلال بالالتزام)"
+  },
+  {
+    "field": "governing_law_and_jurisdiction",
+    "title_ar": "القانون الواجب التطبيق والاختصاص القضائي",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "نزاع حول الجهة المختصة بالنظر في الدعاوى",
+    "description": "تخضع الاتفاقية لأنظمة المملكة العربية السعودية وتختص الجهات القضائية السعودية بالنظر في النزاعات.",
+    "keywords": "القانون الواجب التطبيق، jurisdiction، Saudi law، اختصاص قضائي، governing law، applicable law، Saudi courts",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الأولى (تطبيق النظام)"
+  },
+  {
+    "field": "information_accuracy_disclaimer",
+    "title_ar": "عدم ضمان دقة المعلومات",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "مسؤولية الطرف المفصِح عن قرارات بُنيت على معلومات غير دقيقة",
+    "description": "لا يضمن الطرف المفصِح دقة أو اكتمال المعلومات المقدمة للطرف الآخر.",
+    "keywords": "دقة المعلومات، disclaimer، accuracy، no warranty، information accuracy، representations، reliance",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثالثة والسبعون (درجة جودة المحل)"
+  },
+  {
+    "field": "legal_disclosure_exception",
+    "title_ar": "الإفصاح المسموح قانونياً",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "تعارض مع الأوامر القضائية أو متطلبات نظامية",
+    "description": "يسمح بالإفصاح عن المعلومات إذا كان ذلك مطلوباً بموجب القانون أو أمر قضائي أو متطلب نظامي.",
+    "keywords": "legal disclosure، law requirement، court order، mandatory disclosure، إفصاح مسموح، إلزامي، نظامي",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة السادسة (حالات الإفصاح)"
+  },
+  {
+    "field": "breach_notification",
+    "title_ar": "الإبلاغ عن خرق الاتفاقية",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "تأخر في اتخاذ الإجراءات التصحيحية عند حدوث خرق",
+    "description": "يلتزم الطرف المستلم بإبلاغ الطرف المفصِح فور حدوث أي خرق للاتفاقية أو تسريب للمعلومات.",
+    "keywords": "breach notification، violation، إبلاغ عن خرق، incident report، security incident، notification obligation، prompt disclosure",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة السابعة والسبعون بعد المائة (الإعذار)"
+  },
+  {
+    "field": "personal_data_definition",
+    "title_ar": "تعريف البيانات الشخصية",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "عدم الامتثال لنظام حماية البيانات الشخصية",
+    "description": "يقصد بالبيانات الشخصية كل بيان من شأنه أن يؤدي إلى معرفة الفرد على وجه التحديد أو يجعل التعرف عليه ممكناً.",
+    "keywords": "البيانات الشخصية، personal data، تعريف البيانات، identifiable، individual، personal information، PII",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الأولى (التعريفات)"
+  },
+  {
+    "field": "sensitive_personal_data",
+    "title_ar": "البيانات الشخصية الحساسة",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "معالجة بيانات حساسة دون ضمانات حماية كافية",
+    "description": "تشمل البيانات الحساسة ما يدل على الأصل العرقي أو المعتقد أو البيانات الصحية أو الوراثية أو الائتمانية أو البيومترية.",
+    "keywords": "بيانات حساسة، sensitive data، صحية، بيومترية، وراثية، ائتمانية، special categories، biometric، health data",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الأولى، البند 11 (البيانات الحساسة)"
+  },
+  {
+    "field": "data_subject_access_right",
+    "title_ar": "حق صاحب البيانات في الوصول إلى بياناته",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "انتهاك حقوق صاحب البيانات وفق النظام",
+    "description": "يحق لصاحب البيانات الشخصية الوصول إلى بياناته المتوافرة لدى جهة التحكم وفق الضوابط النظامية.",
+    "keywords": "حق الوصول، access right، صاحب البيانات، data subject، subject access request، SAR، right to access",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الرابعة"
+  },
+  {
+    "field": "data_correction_right",
+    "title_ar": "حق تصحيح البيانات الشخصية",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "الاحتفاظ ببيانات خاطئة تضر بصاحبها",
+    "description": "يحق لصاحب البيانات الشخصية طلب تصحيح بياناته الشخصية أو تحديثها أو إتمامها.",
+    "keywords": "تصحيح البيانات، correction، update personal data، right to rectification، amend، accurate data",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الرابعة"
+  },
+  {
+    "field": "data_breach_notification",
+    "title_ar": "الإبلاغ عن اختراق أو تسرب البيانات",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "التأخر في الإشعار يعرض الجهة للمسؤولية النظامية",
+    "description": "على جهة التحكم إشعار الجهة المختصة وصاحب البيانات عند حدوث تسرب أو تلف أو وصول غير مشروع إذا ترتب عليه ضرر.",
+    "keywords": "اختراق البيانات، تسرب البيانات، breach notification، data leak، cybersecurity incident، notification، data breach",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة العشرون"
+  },
+  {
+    "field": "cross_border_data_transfer",
+    "title_ar": "نقل البيانات الشخصية خارج المملكة",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "نقل بيانات بدون ضمانات كافية مخالف لنظام حماية البيانات",
+    "description": "يجوز نقل البيانات الشخصية خارج المملكة أو الإفصاح عنها خارجها وفق الحالات والضوابط النظامية المحددة.",
+    "keywords": "نقل البيانات خارج المملكة، cross-border transfer، data transfer، international data، adequacy، transfer mechanism",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة التاسعة والعشرون"
+  },
+  {
+    "field": "nda_duration",
+    "title_ar": "مدة سريان الاتفاقية",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "غموض في مدة الالتزامات وانتهاء سريان الاتفاقية",
+    "description": "تحدد مدة سريان الاتفاقية واستمرار الالتزامات المتعلقة بالسرية بعد انتهاء العلاقة.",
+    "keywords": "مدة الاتفاقية، duration، term، survival، contract period، NDA term، effective period، confidentiality period",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثالثة عشرة بعد المائة (بقاء شرط السرية)"
+  },
+  {
+    "field": "no_waiver_clause",
+    "title_ar": "عدم التنازل عن الحقوق",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "تفسير عدم التطبيق كتنازل ضمني عن الحقوق",
+    "description": "عدم تطبيق أي بند من بنود الاتفاقية في حالة معينة لا يعني التنازل عن حق تطبيقه في المستقبل.",
+    "keywords": "no waiver، legal rights، تنازل، waiver clause، enforcement، rights preserved، non-waiver",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثامنة والسبعون (سقوط حق الإبطال)"
+  },
+  {
+    "field": "language_priority",
+    "title_ar": "اعتماد اللغة العربية للاتفاقية",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "تعارض بين النسختين العربية والإنجليزية عند النزاع",
+    "description": "في حال وجود نسختين عربية وإنجليزية تعتمد النسخة العربية في التفسير والتطبيق.",
+    "keywords": "language priority، Arabic version، اللغة العربية، governing language، translation، language control، official language",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة بعد المائة (تفسير العقد)"
+  },
+  {
+    "field": "intellectual_property",
+    "title_ar": "الملكية الفكرية",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "نزاع على الحقوق المعنوية والمالية للمخرجات",
+    "description": "تنظيم ملكية الأعمال والمخرجات والابتكارات والحقوق الفكرية الناتجة عن العمل أو المرتبطة به.",
+    "keywords": "ملكية فكرية، ابتكار، اختراع، intellectual property، innovation، invention، IP rights، work product، deliverables",
+    "reference": "نظام الملكية الفكرية (الهيئة السعودية للملكية الفكرية) — أحكام الملكية المشتركة"
+  },
+  {
+    "field": "party_identification",
+    "title_ar": "تحديد هوية الأطراف",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "غموض في هوية الملتزمين بالاتفاقية",
+    "description": "تحديد هوية الطرف المفصِح والطرف المستلم بالكامل شاملاً الاسم والعنوان والصفة القانونية والسجل التجاري.",
+    "keywords": "هوية الأطراف، الطرف المفصِح، الطرف المستلم، party identification، disclosing party، receiving party، parties، identification",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثانية والثلاثون (الرضى وأهلية المتعاقدين)"
+  },
+  {
+    "field": "nda_type_unilateral_or_mutual",
+    "title_ar": "نوع الاتفاقية — أحادية أم متبادلة",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "التباس في من يلتزم بالسرية ومن يُلزَم بها",
+    "description": "تحديد ما إذا كانت الاتفاقية أحادية الطرف (طرف واحد يُفصح) أو متبادلة (كلا الطرفين يُفصحان ويلتزمان).",
+    "keywords": "أحادية، متبادلة، unilateral NDA، mutual NDA، bilateral، one-way، two-way، reciprocal، type of NDA",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة والتسعون (آثار العقد)"
+  },
+  {
+    "field": "agreement_purpose_definition",
+    "title_ar": "تحديد الغرض من الاتفاقية",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "استخدام المعلومات خارج الغرض المقصود",
+    "description": "تحديد الغرض المحدد الذي من أجله تُفصح المعلومات السرية كالتفاوض أو التقييم أو التعاون في مشروع معين.",
+    "keywords": "غرض الاتفاقية، purpose، permitted purpose، agreement purpose، scope، business purpose، intended use، objective",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثانية والسبعون (محل الالتزام)"
+  },
+  {
+    "field": "entire_agreement_clause",
+    "title_ar": "الاتفاقية الكاملة",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "الاحتجاج باتفاقيات شفهية أو سابقة مخالفة لهذه الاتفاقية",
+    "description": "هذه الاتفاقية تمثل الاتفاق الكامل بين الطرفين وتحل محل جميع الاتفاقيات والتفاهمات السابقة المتعلقة بموضوعها.",
+    "keywords": "اتفاقية كاملة، entire agreement، integration clause، merger clause، supersedes، prior agreements، whole agreement",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة والتسعون (آثار العقد)"
+  },
+  {
+    "field": "amendment_clause",
+    "title_ar": "التعديلات تكون كتابية فقط",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "تعديلات شفهية غير موثقة تعيق الإنفاذ",
+    "description": "لا يجوز تعديل هذه الاتفاقية إلا بموجب وثيقة مكتوبة موقعة من الطرفين.",
+    "keywords": "تعديل، amendment، modification، written amendment، change، variation، signed، written agreement",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة والتسعون (لا نقض إلا باتفاق)"
+  },
+  {
+    "field": "severability_clause",
+    "title_ar": "قابلية التجزئة",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "بطلان الاتفاقية بالكامل بسبب بطلان بند واحد",
+    "description": "إذا تبين أن أي بند من بنود الاتفاقية باطل أو غير قابل للتنفيذ فإن ذلك لا يؤثر على صحة باقي البنود.",
+    "keywords": "قابلية التجزئة، severability، separability، invalid clause، partial invalidity، remaining provisions، savings clause",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة والثمانون (بطلان جزء العقد)"
+  },
+  {
+    "field": "assignment_prohibition",
+    "title_ar": "حظر التنازل عن الاتفاقية",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "انتقال الالتزامات لطرف ثالث دون موافقة",
+    "description": "لا يجوز لأي طرف التنازل عن حقوقه أو التزاماته بموجب هذه الاتفاقية لأي طرف ثالث دون موافقة خطية مسبقة من الطرف الآخر.",
+    "keywords": "حظر التنازل، assignment prohibition، no assignment، transfer rights، assignment restriction، consent required، non-assignable",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الخامسة والخمسون بعد المائتين (التنازل عن العقد)"
+  },
+  {
+    "field": "liability_cap",
+    "title_ar": "الحد الأقصى للتعويض",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "تعرض الطرف المستلم لتعويضات غير محدودة قد تكون مبالغاً فيها",
+    "description": "يجوز للطرفين الاتفاق مسبقاً على تحديد سقف للتعويض عند الإخلال بالاتفاقية في حدود ما يجيزه النظام.",
+    "keywords": "حد التعويض، liability cap، limitation of liability، maximum damages، cap on liability، damage ceiling، indemnification limit",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثامنة والسبعون بعد المائة (التعويض الاتفاقي)"
+  },
+  {
+    "field": "injunctive_relief",
+    "title_ar": "الحماية المؤقتة بأمر قضائي استعجالي",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "استمرار الضرر ريثما يصدر حكم نهائي في النزاع",
+    "description": "يحق للطرف المتضرر من خرق الاتفاقية طلب أمر قضائي استعجالي لوقف الضرر فوراً دون انتظار الفصل في الدعوى الأصلية.",
+    "keywords": "أمر قضائي، injunctive relief، temporary injunction، restraining order، urgent order، emergency relief، court order، equitable relief",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة والستون بعد المائة (التنفيذ العيني)"
+  },
+  {
+    "field": "notices_and_communications",
+    "title_ar": "الإشعارات والتبليغات الرسمية",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "نزاع حول صحة الإشعارات وتاريخ استلامها",
+    "description": "تحديد القنوات الرسمية والوسائل المعتمدة لتبادل الإشعارات والتبليغات بين الطرفين.",
+    "keywords": "إشعارات، تبليغات، notices، communications، formal notice، written notice، delivery method، notification channel",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة السابعة والسبعون بعد المائة (وسائل الإعذار)"
+  },
+  {
+    "field": "change_of_control",
+    "title_ar": "الاستمرارية عند الاندماج أو الاستحواذ",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "انتقال المعلومات السرية لمنافس عبر صفقة استحواذ دون ضمانات",
+    "description": "تحديد ما يحدث للاتفاقية وللمعلومات السرية في حال تغيير السيطرة على أحد الطرفين كالاندماج أو الاستحواذ.",
+    "keywords": "اندماج، استحواذ، change of control، merger، acquisition، M&A، successor، corporate transaction، ownership change",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثامنة والتسعون (الخلف العام)"
+  },
+  {
+    "field": "confidentiality_survival_period",
+    "title_ar": "مدة استمرار التزامات السرية بعد انتهاء الاتفاقية",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "انتهاء التزامات السرية فور انتهاء الاتفاقية",
+    "description": "يستمر الالتزام بالسرية لمدة محددة بعد انتهاء الاتفاقية أو إنهائها، وقد يكون الالتزام دائماً للأسرار التجارية.",
+    "keywords": "استمرار السرية، survival period، post-termination confidentiality، ongoing obligation، perpetual، continuing duty، survival clause",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثالثة عشرة بعد المائة (بقاء شرط السرية بعد الفسخ)"
+  },
+  {
+    "field": "force_majeure_nda",
+    "title_ar": "القوة القاهرة وأثرها على التزامات السرية",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "المسؤولية عن كشف المعلومات بسبب ظروف خارجة عن الإرادة",
+    "description": "لا يعدّ الطرف مخلاً بالتزاماته إذا كان الكشف عن المعلومات ناتجاً عن قوة قاهرة أو ظروف استثنائية خارجة عن إرادته.",
+    "keywords": "قوة قاهرة، force majeure، act of god، extraordinary circumstances، beyond control، unforeseen events، excuse from performance",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة العاشرة بعد المائة (استحالة التنفيذ)"
+  },
+  {
+    "field": "dispute_resolution_mechanism",
+    "title_ar": "آلية تسوية النزاعات",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "لجوء مباشر للقضاء دون محاولة التسوية الودية",
+    "description": "تحديد آلية تسوية النزاعات الناشئة عن الاتفاقية بدءاً بالتفاوض الودي ثم الوساطة ثم التحكيم أو القضاء.",
+    "keywords": "تسوية النزاعات، dispute resolution، mediation، arbitration، negotiation، amicable settlement، ADR، conflict resolution",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة والتسعون + المادة السابعة بعد المائة"
+  },
+  {
+    "field": "pre_existing_ip",
+    "title_ar": "الملكية الفكرية السابقة للاتفاقية",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "نزاع على ملكية الحقوق الفكرية السابقة للاتفاقية",
+    "description": "تبقى الملكية الفكرية التي يمتلكها كل طرف قبل إبرام الاتفاقية ملكاً حصرياً له ولا تتأثر بما يُتبادل من معلومات.",
+    "keywords": "ملكية فكرية سابقة، pre-existing IP، background IP، prior IP، existing rights، pre-existing rights، foreground IP",
+    "reference": "نظام الملكية الفكرية (الهيئة السعودية للملكية الفكرية) + نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة والتسعون"
+  },
+  {
+    "field": "authorized_representatives",
+    "title_ar": "الأشخاص المصرح لهم بالاطلاع على المعلومات",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "انتشار المعلومات السرية لأشخاص غير مصرح لهم داخل الشركة",
+    "description": "تحديد الأشخاص أو الفئات المصرح لهم بالاطلاع على المعلومات السرية كالموظفين والمستشارين والمحامين.",
+    "keywords": "أشخاص مصرح لهم، authorized representatives، need-to-know، authorized persons، permitted disclosees، limited access، restricted access",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثالثة والتسعون (النائب وحدود النيابة)"
+  },
+  {
+    "field": "retroactive_application",
+    "title_ar": "التطبيق بأثر رجعي على ما سبق تبادله",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "عدم تغطية المعلومات المتبادلة قبل توقيع الاتفاقية",
+    "description": "يجوز الاتفاق على أن تسري الاتفاقية على المعلومات التي تم تبادلها قبل تاريخ التوقيع بتحديد تاريخ سريان سابق.",
+    "keywords": "أثر رجعي، retroactive، retroactive application، effective date، prior disclosures، back-dated، pre-signing disclosures",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الحادية والثلاثون (انعقاد العقد وتاريخه)"
+  },
+  {
+    "field": "survival_of_obligations",
+    "title_ar": "استمرار الالتزامات المحددة بعد انتهاء العقد",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "سقوط التزامات جوهرية بانتهاء الاتفاقية",
+    "description": "تستمر بعض الالتزامات كالسرية والملكية الفكرية والتعويض في النفاذ بعد انتهاء الاتفاقية أو إنهائها.",
+    "keywords": "استمرار الالتزامات، survival، surviving obligations، post-termination، continuing obligations، enduring provisions، perpetual obligations",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثالثة عشرة بعد المائة"
+  },
+  {
+    "field": "no_partnership_implied",
+    "title_ar": "نفي الشراكة أو التوظيف الضمني",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "ادعاء وجود شراكة أو علاقة عمل ناشئة عن الاتفاقية",
+    "description": "لا تنشئ هذه الاتفاقية أي شراكة أو مشروع مشترك أو علاقة توكيل أو عمل بين الطرفين.",
+    "keywords": "نفي الشراكة، no partnership، no joint venture، independent parties، no agency، no employment، no affiliation، disclaimer of relationship",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة التاسعة والعشرون بعد الخمسمائة (الشركة)"
+  },
+  {
+    "field": "non_solicitation_clause",
+    "title_ar": "حظر استقطاب موظفي الطرف الآخر",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "استقطاب موظفين رئيسيين من الطرف الآخر بعد الاطلاع على معلوماته",
+    "description": "يحظر على كل طرف خلال مدة الاتفاقية وفترة محددة بعد انتهائها استقطاب أو تعيين موظفي الطرف الآخر الذين اطلعوا على المعلومات السرية.",
+    "keywords": "حظر الاستقطاب، non-solicitation، no-poaching، employee solicitation، talent poaching، non-recruit، hiring restriction",
+    "reference": "نظام العمل (م/51 لعام 1426هـ) — المادة الثالثة والثمانون (حماية المصالح المشروعة)"
+  },
+  {
+    "field": "employee_nda_acknowledgment",
+    "title_ar": "إقرار الموظف بالاطلاع على اتفاقية السرية والالتزام بها",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "ادعاء الموظف عدم علمه بالاتفاقية",
+    "description": "يلتزم الطرف المستلم بأخذ إقرار خطي من كل موظف أو مستشار مصرح له بالاطلاع على المعلومات السرية.",
+    "keywords": "إقرار الموظف، employee acknowledgment، NDA acknowledgment، signed confirmation، employee agreement، employee confidentiality، personnel commitment",
+    "reference": "نظام العمل (م/51 لعام 1426هـ) — المادة الثالثة والثمانون"
+  },
+  {
+    "field": "data_processing_agreement",
+    "title_ar": "اتفاقية معالجة البيانات الشخصية",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "معالجة بيانات شخصية دون اتفاقية رسمية مخالفة لنظام حماية البيانات",
+    "description": "إذا تضمنت الاتفاقية تبادل بيانات شخصية فيجب إبرام اتفاقية معالجة بيانات رسمية تحدد الأدوار والمسؤوليات.",
+    "keywords": "اتفاقية معالجة البيانات، data processing agreement، DPA، data controller، data processor، processing terms، PDPL compliance",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الثالثة (اختيار جهة المعالجة) + المادة التاسعة عشرة"
+  },
+  {
+    "field": "third_party_nda_extension",
+    "title_ar": "توسيع نطاق السرية ليشمل الأطراف الثالثة",
+    "category": "confidentiality_restrictions",
+    "required": "لا",
+    "risk_if_missing": "تسريب المعلومات عبر المقاولين أو الاستشاريين غير الملزمين",
+    "description": "يلتزم الطرف المستلم بأن يُلزم المقاولين والاستشاريين والأطراف الثالثة التي يشاركها المعلومات بالتزامات سرية مماثلة.",
+    "keywords": "أطراف ثالثة، third party NDA، subcontractors، consultants، vendors، downstream obligations، back-to-back NDA، extending confidentiality",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة الثالثة (اختيار جهة المعالجة)"
+  },
+  {
+    "field": "unauthorized_access_prohibition",
+    "title_ar": "حظر الوصول غير المشروع للأنظمة والبيانات",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "اختراق الأنظمة والبيانات بأساليب إلكترونية",
+    "description": "يحظر الوصول غير المشروع لأنظمة المعلومات أو الشبكات الإلكترونية للطرف الآخر أو التنصت على اتصالاته.",
+    "keywords": "وصول غير مشروع، unauthorized access، cyber intrusion، hacking، electronic systems، network access، illegal access، cybercrime",
+    "reference": "نظام مكافحة الجرائم المعلوماتية (م/17 لعام 1428هـ) — المادة الثانية (الدخول غير المشروع)"
+  },
+  {
+    "field": "cybercrime_penalties",
+    "title_ar": "عقوبات انتهاك السرية بالوسائل الإلكترونية",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "عدم الإحاطة بالعقوبات الجزائية الإضافية عند التسريب الإلكتروني",
+    "description": "انتهاك السرية بالوسائل الإلكترونية يُعرض المخالف للعقوبات المقررة في نظام مكافحة الجرائم المعلوماتية إضافة لالتزامات التعويض.",
+    "keywords": "عقوبات جرائم معلوماتية، cybercrime penalties، electronic breach، criminal liability، cyber offense، imprisonment، fine، جزائي",
+    "reference": "نظام مكافحة الجرائم المعلوماتية (م/17 لعام 1428هـ) — المادة الثالثة والسادسة"
+  },
+  {
+    "field": "reverse_engineering_prohibition",
+    "title_ar": "حظر الهندسة العكسية",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "استخراج أسرار تقنية من المنتجات أو البرمجيات المشتركة",
+    "description": "يحظر على الطرف المستلم القيام بأي عمليات هندسة عكسية أو تحليل للمنتجات أو البرمجيات أو الأنظمة الخاصة بالطرف المفصِح.",
+    "keywords": "هندسة عكسية، reverse engineering، decompile، disassemble، reconstruct، analysis، product analysis، no reverse engineering",
+    "reference": "نظام مكافحة الجرائم المعلوماتية (م/17 لعام 1428هـ) — المادة الثالثة + نظام الملكية الفكرية"
+  },
+  {
+    "field": "electronic_signature_validity",
+    "title_ar": "صحة التوقيع الإلكتروني على الاتفاقية",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "نزاع حول صحة الاتفاقية المبرمة بتوقيع إلكتروني",
+    "description": "يُعترف بالتوقيع الإلكتروني المستوفي للشروط النظامية كأساس قانوني صحيح لإبرام هذه الاتفاقية.",
+    "keywords": "توقيع إلكتروني، electronic signature، digital signature، e-signature، legal validity، electronic execution، signed electronically",
+    "reference": "نظام التعاملات الإلكترونية (م/18 لعام 1428هـ) — المادة الثانية عشرة (التوقيع الإلكتروني)"
+  },
+  {
+    "field": "digital_communication_security",
+    "title_ar": "أمن الاتصالات الرقمية في تبادل المعلومات السرية",
+    "category": "confidentiality_restrictions",
+    "required": "لا",
+    "risk_if_missing": "اعتراض المعلومات السرية المرسلة عبر قنوات غير آمنة",
+    "description": "يلتزم الطرفان باستخدام قنوات اتصال آمنة ومشفرة عند تبادل المعلومات السرية إلكترونياً.",
+    "keywords": "أمن الاتصالات، digital communication، encryption، secure channel، data transmission، cybersecurity، secure transfer، حماية الاتصالات",
+    "reference": "نظام التعاملات الإلكترونية (م/18 لعام 1428هـ) — المادة الثالثة والعشرون (حماية الاتصالات)"
+  },
+  {
+    "field": "no_license_grant",
+    "title_ar": "الإفصاح لا يمنح ترخيصاً للملكية الفكرية",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "ادعاء الطرف المستلم بأن الإفصاح يمنحه حق استخدام الملكية الفكرية",
+    "description": "لا يُفسَّر الإفصاح عن المعلومات السرية على أنه منح ترخيص أو حق استخدام لأي ملكية فكرية للطرف المفصِح.",
+    "keywords": "لا ترخيص، no license، no IP license، no grant of rights، no implied license، IP protection، license disclaimer",
+    "reference": "نظام الملكية الفكرية (الهيئة السعودية للملكية الفكرية) — أحكام عدم انتقال الملكية"
+  },
+  {
+    "field": "secondary_information_obligations",
+    "title_ar": "التزامات المواد المشتقة من المعلومات السرية",
+    "category": "confidentiality_restrictions",
+    "required": "لا",
+    "risk_if_missing": "استخدام أو نشر مواد مشتقة من المعلومات السرية دون قيود",
+    "description": "تسري التزامات السرية على أي مواد أو وثائق أو ملاحظات يُعدّها الطرف المستلم استناداً إلى المعلومات السرية.",
+    "keywords": "مواد مشتقة، secondary information، derivative works، notes، summaries، analysis، derivative materials، work product، secondary materials",
+    "reference": "نظام حقوق المؤلف (م/41 لعام 1424هـ) — المادة الأولى + نظام المعاملات المدنية (م/191 لعام 1444هـ)"
+  },
+  {
+    "field": "no_disparagement",
+    "title_ar": "حظر الإضرار بسمعة الطرف الآخر",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "استخدام المعلومات في الإضرار بسمعة الطرف الآخر",
+    "description": "يلتزم كل طرف بعدم إصدار أي تصريحات مضللة أو مسيئة أو تشهيرية بحق الطرف الآخر أو منتجاته أو خدماته.",
+    "keywords": "حظر التشهير، no disparagement، non-disparagement، defamation، reputational harm، negative statements، public statements، reputation protection",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة التاسعة والعشرون (التعسف في استعمال الحق)"
+  },
+  {
+    "field": "standstill_clause",
+    "title_ar": "حظر الاستحواذ أثناء فترة المفاوضات",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "استغلال المعلومات المطلع عليها للقيام بمحاولة استحواذ غير مرحب بها",
+    "description": "يلتزم الطرف المستلم بعدم محاولة الاستحواذ على أوراق مالية أو أصول الطرف المفصِح خلال فترة المفاوضات وبعدها.",
+    "keywords": "حظر استحواذ، standstill، standstill agreement، acquisition restriction، hostile takeover، securities acquisition، no-acquisition",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الحادية والأربعون (حظر التعسف)"
+  },
+  {
+    "field": "confidentiality_audit_right",
+    "title_ar": "حق التحقق من الالتزام بالسرية",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "عدم القدرة على التحقق من امتثال الطرف الآخر لالتزامات السرية",
+    "description": "يحق للطرف المفصِح بإشعار معقول طلب التحقق من امتثال الطرف المستلم للالتزامات المنصوص عليها في هذه الاتفاقية.",
+    "keywords": "حق التدقيق، audit right، compliance audit، right to inspect، verification، monitoring، audit clause، right to verify",
+    "reference": "نظام حماية البيانات الشخصية (م/19 لعام 1443هـ) — المادة التاسعة عشرة + نظام المعاملات المدنية م/191 المادة الرابعة والتسعون"
+  },
+  {
+    "field": "information_marking_requirement",
+    "title_ar": "اشتراط تصنيف المعلومات بعلامة \"سري\"",
+    "category": "confidentiality_restrictions",
+    "required": "لا",
+    "risk_if_missing": "نزاع حول ما إذا كانت المعلومات تندرج ضمن نطاق الاتفاقية",
+    "description": "يجوز اشتراط أن تكون المعلومات السرية المقدمة بصورة مكتوبة مُعلَّمة بوضوح بكلمة \"سري\" أو ما يماثلها.",
+    "keywords": "تصنيف المعلومات، marking requirement، confidential label، classified، marked confidential، labeling، information marking، stamp",
+    "reference": "نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الثانية والسبعون (تحديد محل الالتزام)"
+  },
+  {
+    "field": "trade_secret_protection",
+    "title_ar": "حماية الأسرار التجارية",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "ضياع الحماية النظامية للأسرار التجارية بعدم تصنيفها",
+    "description": "تُعامَل الأسرار التجارية كتقنيات الإنتاج والفورمولات والبيانات التشغيلية بأعلى مستوى من الحماية وفق نظام الملكية الفكرية.",
+    "keywords": "أسرار تجارية، trade secrets، proprietary formula، manufacturing process، business secrets، confidential know-how، trade secret protection",
+    "reference": "نظام الملكية الفكرية (الهيئة السعودية للملكية الفكرية) + نظام المعاملات المدنية (م/191 لعام 1444هـ) — المادة الرابعة والتسعون"
+  }
+]

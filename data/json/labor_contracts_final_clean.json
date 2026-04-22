@@ -1,0 +1,2662 @@
+[
+  {
+    "field": "allowances",
+    "title_ar": "البدلات",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "حرمان من مستحقات إضافية",
+    "description": "تحديد بدل سكن أو نقل أو غيره",
+    "keywords": "بدل، allowances",
+    "reference": "المادة 18"
+  },
+  {
+    "field": "annual_bonus_non_saudi",
+    "title_ar": "العلاوة السنوية لغير السعودي",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "نزاع مالي",
+    "description": "علاوة سنوية لا تتجاوز 5% من الراتب",
+    "keywords": "علاوة سنوية",
+    "reference": "نموذج غير السعودي"
+  },
+  {
+    "field": "bank_name",
+    "title_ar": "اسم البنك",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "تعثر صرف الرواتب",
+    "description": "اسم بنك العامل لتحويل الراتب إليه",
+    "keywords": "بنك",
+    "reference": "نموذج عقد العمل – معلومات الحساب البنكي للطرف الثاني"
+  },
+  {
+    "field": "basic_salary",
+    "title_ar": "الأجر الأساسي",
+    "category": "compensation",
+    "required": "نعم",
+    "risk_if_missing": "بطلان العقد ومخالفة صريحة لنظام العمل",
+    "description": "المبلغ المالي الثابت المتفق عليه مقابل العمل سواء شهرياً أو أسبوعياً دون البدلات، ويعد أساس احتساب بعض الحقوق النظامية.",
+    "keywords": "أجر، راتب، ريال سعودي",
+    "reference": "المادة 18"
+  },
+  {
+    "field": "commission_clause",
+    "title_ar": "العمولات",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "نزاع على الاستحقاق",
+    "description": "تنظيم نسبة العمولة وآلية وموعد استحقاقها إذا اختيرت",
+    "keywords": "عمولة، commission",
+    "reference": "نموذج عقد العمل – الفقرة 9.13"
+  },
+  {
+    "field": "commission_due_date",
+    "title_ar": "موعد استحقاق العمولة",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "تأخر أو نزاع في الدفع",
+    "description": "تحديد الفترة أو التاريخ الذي تستحق فيه العمولة",
+    "keywords": "استحقاق العمولة",
+    "reference": "نموذج عقد العمل – الفقرة 9.13"
+  },
+  {
+    "field": "commission_percentage",
+    "title_ar": "نسبة العمولة",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "خلاف مالي",
+    "description": "النسبة المتفق عليها للعمولة إن وجدت",
+    "keywords": "نسبة عمولة",
+    "reference": "نموذج عقد العمل – الفقرة 9.13"
+  },
+  {
+    "field": "deductions_policy",
+    "title_ar": "سياسة الحسومات",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "نزاع خصومات",
+    "description": "الحالات المسموح فيها بالحسم من الراتب",
+    "keywords": "حسم، خصم",
+    "reference": "النظام"
+  },
+  {
+    "field": "employee_iban",
+    "title_ar": "رقم الآيبان",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "تعثر التحويل البنكي",
+    "description": "رقم الحساب البنكي المعتمد للعامل",
+    "keywords": "IBAN، آيبان",
+    "reference": "نموذج عقد العمل – معلومات الحساب البنكي للطرف الثاني"
+  },
+  {
+    "field": "housing_allowance",
+    "title_ar": "بدل السكن",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "نزاع على المزايا",
+    "description": "إذا اتفق الطرفان على بدل سكن أو توفير سكن، فيجب النص عليه بوضوح في العقد مع بيان قيمته أو نوع السكن وشروطه.",
+    "keywords": "بدل سكن، سكن",
+    "reference": "نموذج عقد العمل – البند 9"
+  },
+  {
+    "field": "housing_transport_allowance",
+    "title_ar": "بدل السكن والنقل",
+    "category": "compensation",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يجب توفير سكن ومواصلات أو بدل نقدي.",
+    "keywords": "بدل سكن; بدل نقل; housing allowance",
+    "reference": "نظام العمل"
+  },
+  {
+    "field": "in_kind_benefits",
+    "title_ar": "المزايا العينية",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "خلاف حول المزايا غير النقدية",
+    "description": "تنظيم المزايا العينية الممنوحة للعامل إذا تم الاتفاق عليها",
+    "keywords": "مزايا عينية",
+    "reference": "نموذج عقد العمل – الفقرة 9.14 / 4.19"
+  },
+  {
+    "field": "in_kind_benefits_description",
+    "title_ar": "وصف المزايا العينية",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "غموض نوع المزايا",
+    "description": "تحديد وصف كل ميزة عينية تمنح للعامل",
+    "keywords": "وصف المزايا",
+    "reference": "نموذج عقد العمل – الفقرة 9.14"
+  },
+  {
+    "field": "in_kind_benefits_due_date",
+    "title_ar": "تاريخ استحقاق المزايا العينية",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "نزاع على موعد التسليم",
+    "description": "تحديد متى تقدم المزايا العينية للعامل",
+    "keywords": "استحقاق المزايا",
+    "reference": "نموذج عقد العمل – الفقرة 9.14"
+  },
+  {
+    "field": "loan_deduction_limit",
+    "title_ar": "الحد الأعلى لخصم القروض من الأجر",
+    "category": "compensation",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يخضع خصم القروض أو المبالغ المستحقة من أجر العامل للحدود النظامية.",
+    "keywords": "قروض; خصم القرض; loan deduction",
+    "reference": "المادة 92"
+  },
+  {
+    "field": "net_wage",
+    "title_ar": "صافي الأجر",
+    "category": "compensation",
+    "required": "نعم",
+    "risk_if_missing": "عدم وضوح المبلغ الفعلي المستحق",
+    "description": "الأجر النهائي المستحق للعامل بعد الاستقطاعات النظامية",
+    "keywords": "صافي الأجر، net wage",
+    "reference": "نموذج عقد العمل – البند 9"
+  },
+  {
+    "field": "other_cash_allowances",
+    "title_ar": "بدلات نقدية أخرى",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "عدم وضوح عناصر الأجر",
+    "description": "أي بدلات نقدية إضافية يتم الاتفاق عليها",
+    "keywords": "بدلات أخرى",
+    "reference": "نموذج عقد العمل – البند 9"
+  },
+  {
+    "field": "pay_commission_if_agreed",
+    "title_ar": "سداد العمولة المتفق عليها",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "مطالبة مالية",
+    "description": "يلتزم الطرف الأول بدفع العمولة عند النص عليها في العقد",
+    "keywords": "عمولة، دفع",
+    "reference": "نموذج عقد العمل – البند 11"
+  },
+  {
+    "field": "pay_in_kind_benefits_if_agreed",
+    "title_ar": "تسليم المزايا العينية المتفق عليها",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "نزاع على المزايا",
+    "description": "يلتزم الطرف الأول بتقديم المزايا العينية إذا نص عليها العقد",
+    "keywords": "مزايا عينية، تسليم",
+    "reference": "نموذج عقد العمل – البند 11"
+  },
+  {
+    "field": "pay_via_approved_method",
+    "title_ar": "سداد الأجر عبر الوسيلة المعتمدة",
+    "category": "compensation",
+    "required": "نعم",
+    "risk_if_missing": "نزاع في السداد أو الإثبات",
+    "description": "يلتزم الطرف الأول بسداد الأجر عبر وسيلة السداد المعتمدة من الوزارة",
+    "keywords": "تحويل، وسيلة سداد",
+    "reference": "نموذج عقد العمل – البند 11"
+  },
+  {
+    "field": "piecework_or_production_wage",
+    "title_ar": "تنظيم الأجر بنظام القطعة أو الإنتاج",
+    "category": "compensation",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يجوز تنظيم الأجر على أساس القطعة أو الإنتاج وفق أحكام النظام.",
+    "keywords": "القطعة; الإنتاج; piecework; production wage",
+    "reference": "المادة 96"
+  },
+  {
+    "field": "piecework_payment",
+    "title_ar": "الأجر بنظام القطعة أو الإنتاج",
+    "category": "compensation",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يجوز الاتفاق على الأجر وفق نظام القطعة أو الإنتاج بما لا يخالف النظام.",
+    "keywords": "أجر القطعة، نظام الإنتاج، piecework salary",
+    "reference": "المادة 59"
+  },
+  {
+    "field": "recruitment_residency_fees",
+    "title_ar": "رسوم الاستقدام والإقامة ورخصة العمل لغير السعودي",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "نزاع حول من يتحمل الرسوم",
+    "description": "التزام الطرف الأول برسوم الاستقدام والإقامة ورخصة العمل وتجديدها للعامل غير السعودي",
+    "keywords": "استقدام، إقامة، رخصة عمل",
+    "reference": "نموذج عقد العمل – البند 11.6.1"
+  },
+  {
+    "field": "setup_allowance",
+    "title_ar": "بدل التجهيز عند بدء التعاقد",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "مطالبة مالية",
+    "description": "بدل تجهيز عند بداية العقد",
+    "keywords": "بدل تجهيز",
+    "reference": "نموذج غير السعودي"
+  },
+  {
+    "field": "total_wage",
+    "title_ar": "إجمالي الأجر",
+    "category": "compensation",
+    "required": "نعم",
+    "risk_if_missing": "نزاع حول إجمالي المستحق",
+    "description": "مجموع الأجر الأساسي والبدلات النقدية الأخرى",
+    "keywords": "إجمالي الأجر، total wage",
+    "reference": "نموذج عقد العمل – البند 9"
+  },
+  {
+    "field": "transport_allowance",
+    "title_ar": "بدل النقل",
+    "category": "compensation",
+    "required": "لا",
+    "risk_if_missing": "نزاع على البدلات",
+    "description": "إذا اتفق الطرفان على بدل نقل أو توفير وسيلة نقل، فيجب تحديد ذلك بوضوح في العقد مع بيان قيمته أو صورته.",
+    "keywords": "بدل نقل، مواصلات",
+    "reference": "نموذج عقد العمل – البند 9"
+  },
+  {
+    "field": "wage_bank_transfer",
+    "title_ar": "دفع الأجر عبر حساب بنكي",
+    "category": "compensation",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "تدفع الأجور عبر حسابات العاملين في البنوك المعتمدة.",
+    "keywords": "حساب بنكي; تحويل الراتب; bank transfer; payroll account",
+    "reference": "المادة 90"
+  },
+  {
+    "field": "wage_deduction_penalty",
+    "title_ar": "الحسم من الأجر كجزاء",
+    "category": "compensation",
+    "required": "نعم",
+    "risk_if_missing": "نزاع أجور",
+    "description": "استخدام الحسم المالي وفق الجدول المعتمد",
+    "keywords": "حسم، أجر",
+    "reference": "جداول الجزاءات"
+  },
+  {
+    "field": "wage_deduction_rules",
+    "title_ar": "القيود على خصم الأجر",
+    "category": "compensation",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "لا يجوز الخصم من أجر العامل إلا في الحالات التي يجيزها النظام.",
+    "keywords": "خصم الراتب; deductions; wage deduction",
+    "reference": "المادة 92"
+  },
+  {
+    "field": "wage_official_currency",
+    "title_ar": "دفع الأجر بالعملة الرسمية",
+    "category": "compensation",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يجب دفع أجر العامل بالعملة الرسمية للبلد.",
+    "keywords": "العملة الرسمية; دفع الأجر; official currency; wage payment",
+    "reference": "المادة 90"
+  },
+  {
+    "field": "wage_payment_date",
+    "title_ar": "موعد صرف الأجر",
+    "category": "compensation",
+    "required": "نعم",
+    "risk_if_missing": "تأخير الرواتب",
+    "description": "تحديد وقت وآلية صرف الراتب",
+    "keywords": "صرف، راتب",
+    "reference": "المادة 18"
+  },
+  {
+    "field": "wage_payment_method",
+    "title_ar": "طريقة صرف الأجر",
+    "category": "compensation",
+    "required": "نعم",
+    "risk_if_missing": "نزاع في وسيلة السداد وإثبات الدفع",
+    "description": "تحديد وسيلة وموعد صرف الأجر، مثل التحويل البنكي أو أي وسيلة دفع معتمدة نظامًا.",
+    "keywords": "راتب، تحويل، بنك، صرف",
+    "reference": "المادة 15، نموذج عقد العمل"
+  },
+  {
+    "field": "wage_payment_on_time",
+    "title_ar": "صرف الأجر في موعده",
+    "category": "compensation",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "يجب صرف أجر العامل في الموعد المحدد وفق النظام.",
+    "keywords": "موعد صرف الأجر; صرف الراتب; pay on time; salary date",
+    "reference": "المادة 90"
+  },
+  {
+    "field": "wage_protection_system",
+    "title_ar": "نظام حماية الأجور",
+    "category": "compensation",
+    "required": "نعم",
+    "risk_if_missing": "غرامات أو إيقاف خدمات",
+    "description": "يلتزم صاحب العمل برفع بيانات الأجور وصرف الرواتب عبر الأنظمة المعتمدة لضمان حماية الأجور وعدم تأخيرها.",
+    "keywords": "WPS، حماية الأجور، مدد",
+    "reference": "قرار برنامج حماية الأجور"
+  },
+  {
+    "field": "confidentiality",
+    "title_ar": "السرية والمحافظة على الأسرار",
+    "category": "confidentiality_restrictions",
+    "required": "نعم",
+    "risk_if_missing": "تسريب أسرار المنشأة وضياع حقوقها",
+    "description": "يلتزم العامل بعدم إفشاء أسرار العمل أو بيانات المنشأة أو البيانات الشخصية التي يطلع عليها أثناء العقد وبعد انتهائه.",
+    "keywords": "سرية، أسرار، خصوصية، بيانات",
+    "reference": "التزامات العامل، أفضل الممارسات"
+  },
+  {
+    "field": "intellectual_property",
+    "title_ar": "الملكية الفكرية",
+    "category": "confidentiality_restrictions",
+    "required": "لا",
+    "risk_if_missing": "نزاع على الحقوق المعنوية والمالية",
+    "description": "تنظيم ملكية الأعمال والمخرجات والابتكارات والحقوق الفكرية الناتجة عن العمل أو المرتبطة به.",
+    "keywords": "ملكية فكرية، ابتكار، اختراع",
+    "reference": "الشروط الإضافية، أفضل ممارسة"
+  },
+  {
+    "field": "non_compete_clause",
+    "title_ar": "شرط عدم المنافسة",
+    "category": "confidentiality_restrictions",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يجوز لصاحب العمل اشتراط عدم منافسة العامل بعد انتهاء العقد ضمن حدود محددة.",
+    "keywords": "عدم المنافسة، non compete",
+    "reference": "المادة 83"
+  },
+  {
+    "field": "contract_continuity_on_business_transfer",
+    "title_ar": "استمرار عقد العمل عند انتقال ملكية المنشأة",
+    "category": "contract_terms",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "تستمر عقود العمل إذا انتقلت ملكية المنشأة إلى صاحب عمل جديد.",
+    "keywords": "انتقال ملكية المنشأة; business transfer; contract continuity",
+    "reference": "المادة 18"
+  },
+  {
+    "field": "contract_duration",
+    "title_ar": "مدة العقد",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "خلاف حول انتهاء العقد أو تجديده",
+    "description": "تحديد مدة العقد وبيان ما إذا كان محدد المدة أو غير محدد المدة، وشروط التجديد أو الانتهاء.",
+    "keywords": "مدة، عقد، تجديد، نهاية",
+    "reference": "المادة 25"
+  },
+  {
+    "field": "contract_end_date",
+    "title_ar": "تاريخ نهاية العقد",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "غموض نهاية العقد المحدد",
+    "description": "تحديد تاريخ انتهاء العقد إذا كان محدد المدة",
+    "keywords": "نهاية العقد، end date",
+    "reference": "نموذج عقد العمل – البند 1"
+  },
+  {
+    "field": "contract_start_date",
+    "title_ar": "تاريخ مباشرة العمل",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "نزاع حول بداية الاستحقاقات والمدة",
+    "description": "تاريخ بدء العامل بمباشرة العمل فعليًا وبدء احتساب المدة والحقوق.",
+    "keywords": "بداية العمل، مباشرة، أول يوم",
+    "reference": "المادة 18، نموذج عقد العمل"
+  },
+  {
+    "field": "contract_template_compliance",
+    "title_ar": "الالتزام بنموذج عقد العمل المعتمد",
+    "category": "contract_terms",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يجب أن يتوافق عقد العمل مع النموذج المعتمد من وزارة الموارد البشرية.",
+    "keywords": "نموذج عقد العمل، نموذج الوزارة، contract template",
+    "reference": "المادة 52"
+  },
+  {
+    "field": "contract_type",
+    "title_ar": "نوع العقد",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "غموض طبيعة العلاقة التعاقدية",
+    "description": "تحديد ما إذا كان العقد محدد المدة أو غير محدد المدة أو لبعض الوقت",
+    "keywords": "نوع العقد، محدد، غير محدد، fixed-term, open-ended",
+    "reference": "نموذج عقد العمل – البند 1"
+  },
+  {
+    "field": "contract_void_if_no_start",
+    "title_ar": "اعتبار العقد كأن لم يكن عند عدم المباشرة",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "نزاع حول سريان العقد",
+    "description": "سقوط العقد إذا لم تتم المباشرة في المدة المحددة",
+    "keywords": "كأن لم يكن",
+    "reference": "المادة الرابعة"
+  },
+  {
+    "field": "flexible_work_arrangement",
+    "title_ar": "ترتيبات العمل المرن",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "نزاع على نمط العمل",
+    "description": "يجوز الاتفاق على العمل المرن أو الجزئي أو بنظام الساعات وفق الأنظمة واللوائح المعتمدة.",
+    "keywords": "مرن، flexible، جزئي",
+    "reference": "تنظيم العمل المرن"
+  },
+  {
+    "field": "no_full_time_conversion",
+    "title_ar": "عدم تحويل الجزئي إلى كامل",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "نزاع حول نوع العقد",
+    "description": "لا يجوز تحويل العقد الجزئي إلى دوام كامل إلا بإجراء جديد",
+    "keywords": "تحويل العقد",
+    "reference": "نموذج عقد لبعض الوقت"
+  },
+  {
+    "field": "part_time_ratio",
+    "title_ar": "نسبة العمل لبعض الوقت",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "غموض طبيعة الدوام الجزئي",
+    "description": "تحديد نسبة العمل الجزئي مثل 20% أو 40% من الدوام الرسمي",
+    "keywords": "بعض الوقت، 20%، 40%",
+    "reference": "نموذج عقد لبعض الوقت"
+  },
+  {
+    "field": "part_time_work",
+    "title_ar": "العمل لبعض الوقت",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "غموض ساعات العمل",
+    "description": "تحديد ساعات وأجر العمل الجزئي",
+    "keywords": "جزئي، part time",
+    "reference": "المادة 27"
+  },
+  {
+    "field": "probation_extension",
+    "title_ar": "تمديد فترة التجربة",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "تمديد غير مشروع",
+    "description": "لا يتم التمديد إلا وفق النظام والاتفاق",
+    "keywords": "تمديد تجربة",
+    "reference": "المادة 19"
+  },
+  {
+    "field": "probation_max_180_days",
+    "title_ar": "الحد الأعلى لفترة التجربة",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "فترة تجربة غير مشروعة",
+    "description": "يجوز الاتفاق على فترة تجربة على ألا تتجاوز 180 يومًا متى كان ذلك وفق الشروط النظامية.",
+    "keywords": "تجربة، 180 يوم",
+    "reference": "المادة 53"
+  },
+  {
+    "field": "probation_max_duration",
+    "title_ar": "الحد الأعلى لفترة التجربة",
+    "category": "contract_terms",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "لا يجوز أن تتجاوز فترة التجربة 180 يومًا.",
+    "keywords": "فترة التجربة; probation period; 180 days",
+    "reference": "المادة 53"
+  },
+  {
+    "field": "probation_period",
+    "title_ar": "فترة التجربة",
+    "category": "contract_terms",
+    "required": "اختياري",
+    "risk_if_missing": "اعتبار العامل مثبتًا فوراً وعدم القدرة على إنهاء العقد بسهولة",
+    "description": "تحديد مدة لتجربة الموظف للتحقق من كفاءته على ألا تزيد عن 90 يوماً",
+    "keywords": "تجربة، 90 يوماً، اختبار",
+    "reference": "المادة 19"
+  },
+  {
+    "field": "remote_work_clause",
+    "title_ar": "العمل عن بعد",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "خلافات الأداء والمكان",
+    "description": "تحديد ضوابط العمل عن بعد إن وجد",
+    "keywords": "عن بعد، remote",
+    "reference": "تنظيم حديث"
+  },
+  {
+    "field": "renewal_clause",
+    "title_ar": "تجديد العقد",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "نزاع عند الاستمرار بالعمل",
+    "description": "تحديد شروط التجديد التلقائي أو اليدوي",
+    "keywords": "تجديد",
+    "reference": "المادة 25"
+  },
+  {
+    "field": "seasonal_work",
+    "title_ar": "العمل الموسمي",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "غموض مدة العقد",
+    "description": "تنظيم العقود الموسمية والمؤقتة",
+    "keywords": "موسمي، مؤقت",
+    "reference": "المادة 27"
+  },
+  {
+    "field": "start_within_15_days",
+    "title_ar": "المباشرة خلال مدة محددة",
+    "category": "contract_terms",
+    "required": "نعم",
+    "risk_if_missing": "اعتبار العقد كأن لم يكن",
+    "description": "وجوب المباشرة خلال 15 يومًا من توقيع العقد",
+    "keywords": "مباشرة، 15 يوم",
+    "reference": "المادة الرابعة"
+  },
+  {
+    "field": "trainee_contract",
+    "title_ar": "عقد تدريب",
+    "category": "contract_terms",
+    "required": "لا",
+    "risk_if_missing": "نزاع حول صفة العلاقة",
+    "description": "تحديد شروط التدريب إذا كانت العلاقة تدريبية",
+    "keywords": "متدرب، تدريب",
+    "reference": "المادة 35"
+  },
+  {
+    "field": "absence_policy",
+    "title_ar": "سياسة الغياب والانقطاع",
+    "category": "employee_obligations",
+    "required": "نعم",
+    "risk_if_missing": "خلافات عند الغياب",
+    "description": "تنظيم الغياب والانقطاع وآثاره",
+    "keywords": "غياب، انقطاع",
+    "reference": "المادة 38"
+  },
+  {
+    "field": "assist_in_emergencies",
+    "title_ar": "المساعدة في الطوارئ والكوارث",
+    "category": "employee_obligations",
+    "required": "لا",
+    "risk_if_missing": "تعطل الاستجابة للطوارئ",
+    "description": "يلتزم العامل بتقديم المساعدة والدعم دون أجر إضافي عند الضرورة في الطوارئ",
+    "keywords": "طوارئ، كوارث",
+    "reference": "نموذج عقد العمل – البند 12.4"
+  },
+  {
+    "field": "direct_supervision_clause",
+    "title_ar": "العمل تحت الإدارة والإشراف",
+    "category": "employee_obligations",
+    "required": "لا",
+    "risk_if_missing": "نزاع حول نطاق التبعية",
+    "description": "التزام العامل بالعمل تحت إدارة وإشراف الطرف الأول",
+    "keywords": "إشراف، إدارة",
+    "reference": "المادة الثالثة"
+  },
+  {
+    "field": "disciplinary_actions",
+    "title_ar": "الجزاءات التأديبية",
+    "category": "employee_obligations",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يجوز لصاحب العمل توقيع جزاءات تأديبية مثل الإنذار أو الخصم وفق النظام.",
+    "keywords": "جزاءات تأديبية، disciplinary action",
+    "reference": "المادة 66"
+  },
+  {
+    "field": "employee_duties",
+    "title_ar": "واجبات العامل",
+    "category": "employee_obligations",
+    "required": true,
+    "risk_if_missing": "medium",
+    "description": "يجب على العامل أداء العمل بإخلاص والالتزام بتعليمات صاحب العمل.",
+    "keywords": "واجبات العامل، employee duties",
+    "reference": "المادة 65"
+  },
+  {
+    "field": "good_conduct_ethics",
+    "title_ar": "حسن السلوك وأخلاقيات العمل",
+    "category": "employee_obligations",
+    "required": "نعم",
+    "risk_if_missing": "مساءلة تأديبية",
+    "description": "يلتزم العامل بالأنظمة والآداب العامة، واحترام قواعد السلوك المهني والانضباط داخل بيئة العمل.",
+    "keywords": "سلوك، أخلاقيات، انضباط، احترام",
+    "reference": "المادة 53، نموذج عقد العمل – البند 12.3"
+  },
+  {
+    "field": "lateness_policy",
+    "title_ar": "سياسة التأخر عن العمل",
+    "category": "employee_obligations",
+    "required": "لا",
+    "risk_if_missing": "خلافات متكررة",
+    "description": "تنظيم التأخير والحسم إن وجد",
+    "keywords": "تأخير، دوام",
+    "reference": "المادة 38"
+  },
+  {
+    "field": "medical_exam_when_requested",
+    "title_ar": "الفحص الطبي عند الطلب",
+    "category": "employee_obligations",
+    "required": "لا",
+    "risk_if_missing": "مخاطر صحية ومهنية",
+    "description": "يلتزم العامل بإجراء الفحص الطبي قبل أو أثناء العمل للتحقق من السلامة المهنية أو السارية",
+    "keywords": "فحص طبي",
+    "reference": "نموذج عقد العمل – البند 12.5"
+  },
+  {
+    "field": "performance_evaluation",
+    "title_ar": "تقييم الأداء",
+    "category": "employee_obligations",
+    "required": "لا",
+    "risk_if_missing": "اعتراضات وظيفية",
+    "description": "آلية تقييم أداء العاملين",
+    "keywords": "تقييم، KPI",
+    "reference": "المادة 18"
+  },
+  {
+    "field": "promotion_policy",
+    "title_ar": "سياسة الترقيات",
+    "category": "employee_obligations",
+    "required": "لا",
+    "risk_if_missing": "شعور بعدم العدالة",
+    "description": "معايير الترقية والترقي الوظيفي",
+    "keywords": "ترقية",
+    "reference": "المادة 22"
+  },
+  {
+    "field": "training_obligation",
+    "title_ar": "التدريب والتأهيل",
+    "category": "employee_obligations",
+    "required": "لا",
+    "risk_if_missing": "ضعف التطوير المهني",
+    "description": "تنظيم برامج التدريب والتأهيل ورفع مهارات العامل بما يخدم طبيعة العمل.",
+    "keywords": "تدريب، تأهيل، تطوير",
+    "reference": "المادة 13، المادة 35"
+  },
+  {
+    "field": "worker_follow_safety_rules",
+    "title_ar": "التزام العامل بإجراءات السلامة",
+    "category": "employee_obligations",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يلتزم العامل باتباع تعليمات السلامة والوقاية في مكان العمل.",
+    "keywords": "تعليمات السلامة; worker safety compliance",
+    "reference": "المادة 124 بعد المائة"
+  },
+  {
+    "field": "employee_transfer_rules",
+    "title_ar": "نقل العامل لمكان عمل آخر",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "لا يجوز نقل العامل إلى مكان آخر يقتضي تغيير محل إقامته إلا بموافقته.",
+    "keywords": "نقل العامل، تغيير مكان العمل، employee transfer",
+    "reference": "المادة 58"
+  },
+  {
+    "field": "job_change_restriction",
+    "title_ar": "عدم تكليف العامل بعمل مختلف",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "لا يجوز تكليف العامل بعمل يختلف اختلافاً جوهرياً عن عمله المتفق عليه.",
+    "keywords": "تغيير الوظيفة، تكليف بعمل آخر",
+    "reference": "المادة 60"
+  },
+  {
+    "field": "employer_obligations",
+    "title_ar": "التزامات صاحب العمل",
+    "category": "employer_rights",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "يجب على صاحب العمل احترام العامل وعدم تشغيله سخرة وتوفير بيئة عمل مناسبة.",
+    "keywords": "التزامات صاحب العمل، employer duties",
+    "reference": "المادة 61"
+  },
+  {
+    "field": "disciplinary_penalties",
+    "title_ar": "العقوبات والجزاءات التأديبية",
+    "category": "employer_rights",
+    "required": "نعم",
+    "risk_if_missing": "ضعف الإنفاذ الداخلي",
+    "description": "تشمل الجزاءات التأديبية المعتمدة: الإنذار الكتابي، الحسم من الأجر، الحرمان من مزايا، الإيقاف المؤقت عن العمل، أو الفصل في المخالفات الجسيمة وفق النظام.",
+    "keywords": "جزاءات، عقوبات، مخالفات، إنذار، خصم",
+    "reference": "المادة 38، المادة 58، ص34-36"
+  },
+  {
+    "field": "disciplinary_procedure_clause",
+    "title_ar": "خضوع التحقيق والتأديب للنظام",
+    "category": "employer_rights",
+    "required": "نعم",
+    "risk_if_missing": "طعن في الإجراءات",
+    "description": "إجراءات التحقيق والتأديب وإيقاع الجزاءات تكون وفق النظام",
+    "keywords": "تأديب، جزاءات، تحقيق",
+    "reference": "المادة الثالثة والعشرون"
+  },
+  {
+    "field": "employer_duties",
+    "title_ar": "واجبات صاحب العمل",
+    "category": "employer_rights",
+    "required": "نعم",
+    "risk_if_missing": "إخلال تعاقدي",
+    "description": "التزامات صاحب العمل تجاه العامل والبيئة النظامية",
+    "keywords": "صاحب العمل، التزامات",
+    "reference": "المادة 45"
+  },
+  {
+    "field": "penalty_proportionality",
+    "title_ar": "تناسب العقوبة مع المخالفة",
+    "category": "employer_rights",
+    "required": "نعم",
+    "risk_if_missing": "بطلان الجزاء",
+    "description": "يجب أن تكون العقوبة مناسبة للمخالفة",
+    "keywords": "تناسب العقوبة",
+    "reference": "المادة 59"
+  },
+  {
+    "field": "policy_acknowledgment",
+    "title_ar": "إقرار استلام اللائحة والسياسات",
+    "category": "employer_rights",
+    "required": "نعم",
+    "risk_if_missing": "صعوبة الإثبات",
+    "description": "توثيق اطلاع الموظف على اللائحة الداخلية",
+    "keywords": "إقرار، استلام",
+    "reference": "أفضل ممارسة"
+  },
+  {
+    "field": "suspension_from_work",
+    "title_ar": "الإيقاف المؤقت عن العمل",
+    "category": "employer_rights",
+    "required": "لا",
+    "risk_if_missing": "نزاع إداري",
+    "description": "يجوز إيقاف العامل مؤقتًا عن العمل كجزاء تأديبي عند ارتكابه مخالفة وظيفية تستوجب ذلك وفق لائحة الجزاءات المعتمدة، على أن يكون ذلك ضمن الجزاءات النظامية وبعد استيفاء الإجراءات التأديبية المقررة مثل التحقيق وسماع أقوال العامل، وبما لا يتجاوز الحدود النظامية.",
+    "keywords": "إيقاف، تعليق، مؤقت",
+    "reference": "المادة 66"
+  },
+  {
+    "field": "temporary_assignment",
+    "title_ar": "التكليف المؤقت",
+    "category": "employer_rights",
+    "required": "لا",
+    "risk_if_missing": "تكليف غير منظم",
+    "description": "تحديد حالات التكليف المؤقت بمهام أخرى",
+    "keywords": "تكليف مؤقت",
+    "reference": "المادة 20"
+  },
+  {
+    "field": "transfer_work_location",
+    "title_ar": "نقل مكان العمل",
+    "category": "employer_rights",
+    "required": "لا",
+    "risk_if_missing": "إساءة استخدام النقل",
+    "description": "تنظيم نقل العامل لموقع آخر وفق النظام",
+    "keywords": "نقل، موقع",
+    "reference": "المادة 20"
+  },
+  {
+    "field": "warning_before_penalty",
+    "title_ar": "الإنذار الكتابي",
+    "category": "employer_rights",
+    "required": "نعم",
+    "risk_if_missing": "ضعف التوثيق",
+    "description": "الإنذار الكتابي أحد الجزاءات التأديبية المعتمدة، ويستخدم للمخالفات التي تستوجب التنبيه الرسمي قبل اللجوء إلى جزاءات أشد بحسب جسامة المخالفة وتكرارها ووفق لائحة تنظيم العمل.",
+    "keywords": "إنذار، كتابي، جزاء",
+    "reference": "المواد 66-69، لائحة تنظيم العمل"
+  },
+  {
+    "field": "work_tools_provision",
+    "title_ar": "توفير أدوات العمل",
+    "category": "employer_rights",
+    "required": "لا",
+    "risk_if_missing": "ضعف الإنتاجية أو نزاع",
+    "description": "يلتزم صاحب العمل بتوفير الأدوات والمعدات اللازمة لأداء العامل مهامه، وعلى العامل المحافظة عليها.",
+    "keywords": "أدوات، معدات، عهدة",
+    "reference": "المادة 23، نموذج عقد العمل – البند 12.2"
+  },
+  {
+    "field": "contract_data_amendment",
+    "title_ar": "تعديل بيانات العقد",
+    "category": "general_provisions",
+    "required": "لا",
+    "risk_if_missing": "تعديل غير مشروع",
+    "description": "لا يجوز تعديل بيانات أو شروط العقد إلا بموافقة الطرفين، مع توثيق التعديل عبر الوسائل المعتمدة عند اللزوم.",
+    "keywords": "تعديل عقد، موافقة، توثيق",
+    "reference": "نموذج عقد العمل – البند 14.8، 14.9"
+  },
+  {
+    "field": "contract_execution_date",
+    "title_ar": "تاريخ إبرام العقد",
+    "category": "general_provisions",
+    "required": "نعم",
+    "risk_if_missing": "نزاع حول بدء الالتزامات",
+    "description": "تاريخ توقيع وإبرام عقد العمل بين الطرفين.",
+    "keywords": "توقيع، إبرام، تاريخ العقد",
+    "reference": "نموذج عقد العمل – البند 1"
+  },
+  {
+    "field": "contract_execution_day",
+    "title_ar": "يوم إبرام العقد",
+    "category": "general_provisions",
+    "required": "لا",
+    "risk_if_missing": "نقص في البيانات الشكلية",
+    "description": "اليوم الذي أبرم فيه العقد",
+    "keywords": "يوم، تاريخ",
+    "reference": "نموذج العقد"
+  },
+  {
+    "field": "contract_execution_location",
+    "title_ar": "مكان إبرام العقد",
+    "category": "general_provisions",
+    "required": "لا",
+    "risk_if_missing": "خلاف شكلي أو إجرائي",
+    "description": "تحديد المدينة أو المكان الذي تم فيه إبرام العقد",
+    "keywords": "مكان الإبرام، city",
+    "reference": "نموذج عقد العمل – البند 1"
+  },
+  {
+    "field": "contract_number",
+    "title_ar": "رقم العقد",
+    "category": "general_provisions",
+    "required": "نعم",
+    "risk_if_missing": "صعوبة التتبع والإثبات",
+    "description": "رقم مرجعي يميز العقد ويربطه بالسجلات الرسمية",
+    "keywords": "رقم العقد، contract no",
+    "reference": "نموذج عقد العمل – البند 1"
+  },
+  {
+    "field": "contract_written_copy",
+    "title_ar": "نسخة مكتوبة من العقد",
+    "category": "general_provisions",
+    "required": "نعم",
+    "risk_if_missing": "صعوبة إثبات الحقوق والالتزامات",
+    "description": "يجب تحرير عقد العمل من نسختين واضحتين، وتسليم نسخة لكل طرف، ويجوز أن تكون النسخة إلكترونية معتمدة.",
+    "keywords": "نسخة، عقد مكتوب، نسخة إلكترونية",
+    "reference": "المادة 17، المادة السادسة والعشرون، نموذج عقد العمل – البند 14.10"
+  },
+  {
+    "field": "dispute_resolution_clause",
+    "title_ar": "حل النزاعات والاختصاص القضائي",
+    "category": "general_provisions",
+    "required": "نعم",
+    "risk_if_missing": "غموض الجهة المختصة",
+    "description": "تتم محاولة حل النزاع وديًا أولاً، وعند التعذر تكون المحكمة العمالية هي الجهة المختصة.",
+    "keywords": "نزاع، محكمة عمالية، تسوية",
+    "reference": "المادة 40، المادة الحادية والعشرون"
+  },
+  {
+    "field": "electronic_contract_authentication",
+    "title_ar": "توثيق العقد إلكترونيًا",
+    "category": "general_provisions",
+    "required": "نعم",
+    "risk_if_missing": "ضعف الحجية أو عدم الامتثال",
+    "description": "يجب توثيق عقد العمل إلكترونيًا عبر المنصات المعتمدة مثل منصة قوى وفق الأنظمة السارية.",
+    "keywords": "قوى، توثيق، عقد إلكتروني",
+    "reference": "المادة 17"
+  },
+  {
+    "field": "employee_acknowledgment_of_policies",
+    "title_ar": "إقرار العامل بالاطلاع على الأنظمة والسياسات",
+    "category": "general_provisions",
+    "required": "نعم",
+    "risk_if_missing": "إنكار العلم باللوائح",
+    "description": "يقر العامل باطلاعه على العقد والأنظمة واللوائح والسياسات",
+    "keywords": "إقرار، لوائح، سياسات",
+    "reference": "المادة الثانية والعشرون"
+  },
+  {
+    "field": "execution_document_clause",
+    "title_ar": "العقد سند تنفيذي",
+    "category": "general_provisions",
+    "required": "لا",
+    "risk_if_missing": "ضعف ضمان التنفيذ",
+    "description": "اعتبار العقد سندًا تنفيذيًا فيما نص عليه وفق الضوابط",
+    "keywords": "سند تنفيذي",
+    "reference": "نموذج عقد العمل – البند 13.3"
+  },
+  {
+    "field": "governing_language",
+    "title_ar": "اللغة المعتمدة للعقد",
+    "category": "general_provisions",
+    "required": "لا",
+    "risk_if_missing": "خلاف تفسير البنود",
+    "description": "تحديد النسخة المعتمدة عند الترجمة",
+    "keywords": "لغة العقد",
+    "reference": "general"
+  },
+  {
+    "field": "hijri_calendar_clause",
+    "title_ar": "التقويم الهجري المعتمد",
+    "category": "general_provisions",
+    "required": "لا",
+    "risk_if_missing": "نزاع في احتساب المدد",
+    "description": "اعتماد التقويم الهجري لاحتساب المدد المنصوص عليها",
+    "keywords": "هجري، مدد",
+    "reference": "المادة الثانية"
+  },
+  {
+    "field": "legal_capacity",
+    "title_ar": "الأهلية النظامية للطرفين",
+    "category": "general_provisions",
+    "required": "لا",
+    "risk_if_missing": "الطعن في صحة التعاقد",
+    "description": "إقرار بأن الطرفين بكامل أهليتهما شرعًا ونظامًا",
+    "keywords": "أهلية، صفة قانونية",
+    "reference": "مقدمة العقد"
+  },
+  {
+    "field": "no_amendment_without_written_agreement",
+    "title_ar": "عدم تعديل العقد إلا باتفاق مكتوب",
+    "category": "general_provisions",
+    "required": "نعم",
+    "risk_if_missing": "تعديلات غير معترف بها",
+    "description": "لا يجوز تعديل العقد إلا بموجب اتفاق كتابي موقع من الطرفين",
+    "keywords": "تعديل مكتوب، ملحق",
+    "reference": "المادة الرابعة والعشرون"
+  },
+  {
+    "field": "notice_by_email_or_registered_mail",
+    "title_ar": "الإشعارات الرسمية بين الطرفين",
+    "category": "general_provisions",
+    "required": "لا",
+    "risk_if_missing": "نزاع في صحة التبليغ",
+    "description": "تتم الإشعارات والمراسلات الرسمية بين الطرفين عبر البريد الإلكتروني المعتمد، البريد المسجل، أو أي وسيلة تبليغ موثقة ومعترف بها نظامًا.",
+    "keywords": "إشعار، بريد إلكتروني، بريد مسجل، تبليغ",
+    "reference": "المادة الخامسة والعشرون، نموذج عقد العمل – البند 14"
+  },
+  {
+    "field": "optional_additional_terms",
+    "title_ar": "الشروط الإضافية الاختيارية",
+    "category": "general_provisions",
+    "required": "لا",
+    "risk_if_missing": "إدراج شروط باطلة",
+    "description": "يجوز للطرفين إضافة شروط وأحكام إضافية ما دامت لا تخالف النظام",
+    "keywords": "شروط إضافية",
+    "reference": "نموذج عقد العمل – البند 15"
+  },
+  {
+    "field": "parties_acknowledgment",
+    "title_ar": "إقرار الأطراف بفهم العقد",
+    "category": "general_provisions",
+    "required": "نعم",
+    "risk_if_missing": "الطعن بعدم العلم بالشروط",
+    "description": "إقرار الطرفين بأنهما علما وفهما جميع الشروط والأحكام",
+    "keywords": "إقرار، فهم العقد",
+    "reference": "نموذج عقد العمل – البند 14.3"
+  },
+  {
+    "field": "preamble_clause",
+    "title_ar": "التمهيد جزء من العقد",
+    "category": "general_provisions",
+    "required": "نعم",
+    "risk_if_missing": "نزاع حول حجية التمهيد",
+    "description": "اعتبار التمهيد جزءًا لا يتجزأ من العقد",
+    "keywords": "تمهيد، جزء من العقد",
+    "reference": "المادة الأولى"
+  },
+  {
+    "field": "closure_exit_plan",
+    "title_ar": "خطة التصفية أو التوقف",
+    "category": "governance",
+    "required": "لا",
+    "risk_if_missing": "تعثر العملاء",
+    "description": "التزامات عند إلغاء الترخيص أو توقف النشاط",
+    "keywords": "تصفية",
+    "reference": "ص52,61"
+  },
+  {
+    "field": "compliance_department",
+    "title_ar": "إدارة الالتزام",
+    "category": "governance",
+    "required": "نعم",
+    "risk_if_missing": "ضعف الحوكمة",
+    "description": "وجود إدارة مستقلة للالتزام بالشركة",
+    "keywords": "التزام",
+    "reference": "ص55"
+  },
+  {
+    "field": "hr_independent_department",
+    "title_ar": "إدارة موارد بشرية مستقلة",
+    "category": "governance",
+    "required": "نعم",
+    "risk_if_missing": "ضعف إدارة العاملين",
+    "description": "إدارة مستقلة للموارد البشرية لدى المرخص",
+    "keywords": "موارد بشرية",
+    "reference": "ص54"
+  },
+  {
+    "field": "internal_audit_department",
+    "title_ar": "إدارة المراجعة الداخلية",
+    "category": "governance",
+    "required": "نعم",
+    "risk_if_missing": "مخاطر رقابية",
+    "description": "وجود إدارة مراجعة داخلية وخطة سنوية",
+    "keywords": "مراجعة داخلية",
+    "reference": "ص54-56"
+  },
+  {
+    "field": "job_duties",
+    "title_ar": "المهام الوظيفية",
+    "category": "job_information",
+    "required": "نعم",
+    "risk_if_missing": "تكليف العامل بمهام غير مهنته الموثقة أو رفض العامل لمهام غير محددة",
+    "description": "تحديد المسمى الوظيفي وطبيعة العمل والمهام والمسؤوليات المسندة للعامل بشكل واضح.",
+    "keywords": "مهام، وظيفة، مسؤوليات، مسمى",
+    "reference": "المادة 18، المادة 48، نموذج عقد العمل – البند 12.1"
+  },
+  {
+    "field": "job_grade",
+    "title_ar": "الدرجة أو المستوى الوظيفي",
+    "category": "job_information",
+    "required": "لا",
+    "risk_if_missing": "غموض السلم الوظيفي",
+    "description": "تحديد الدرجة أو المرتبة أو المستوى الوظيفي المتفق عليه ضمن الهيكل التنظيمي.",
+    "keywords": "درجة، مستوى، مرتبة",
+    "reference": "المادة الثالثة"
+  },
+  {
+    "field": "job_title",
+    "title_ar": "المسمى الوظيفي",
+    "category": "job_information",
+    "required": "نعم",
+    "risk_if_missing": "تكليف بمهام غير متفق عليها",
+    "description": "تحديد الوظيفة الأساسية أو المسمى الوظيفي الذي يشغله العامل.",
+    "keywords": "وظيفة، مسمى",
+    "reference": "المادة 18"
+  },
+  {
+    "field": "work_domain",
+    "title_ar": "نطاق العمل",
+    "category": "job_information",
+    "required": "لا",
+    "risk_if_missing": "خلاف حول مكان مزاولة العمل",
+    "description": "تحديد ما إذا كان نطاق العمل داخل المملكة أو بحسب ما يحدد بالعقد",
+    "keywords": "نطاق العمل",
+    "reference": "نموذج عقد العمل – معلومات المهنة والعمل"
+  },
+  {
+    "field": "work_location",
+    "title_ar": "مكان العمل",
+    "category": "job_information",
+    "required": "نعم",
+    "risk_if_missing": "النزاع حول مقر العمل أو النقل التعسفي",
+    "description": "تحديد مقر العمل أو المدينة أو الموقع الجغرافي الذي يؤدي فيه العامل مهامه، ولا يجوز نقل العامل إلى مكان يتطلب تغيير محل إقامته إلا وفق الضوابط النظامية وبموافقته الكتابية عند اللزوم.",
+    "keywords": "مكان العمل، مقر، مدينة، موقع",
+    "reference": "المادة 18، المادة 58"
+  },
+  {
+    "field": "work_type",
+    "title_ar": "نوع العمل",
+    "category": "job_information",
+    "required": "لا",
+    "risk_if_missing": "غموض طبيعة الوظيفة",
+    "description": "تحديد طبيعة العمل أو نوعه وفق العقد الأصلي",
+    "keywords": "نوع العمل",
+    "reference": "نموذج عقد العمل – معلومات المهنة والعمل"
+  },
+  {
+    "field": "accommodation_conditions",
+    "title_ar": "شروط السكن المقدم",
+    "category": "leave_benefits",
+    "required": "لا",
+    "risk_if_missing": "نزاع على جودة السكن",
+    "description": "إذا وفر صاحب العمل سكنًا للعامل، فيجب تحديد شروطه ومستواه وصلاحيته للاستخدام.",
+    "keywords": "سكن، سكن عمالي، إقامة",
+    "reference": "المادة 30"
+  },
+  {
+    "field": "annual_leave_compensation",
+    "title_ar": "التعويض عن رصيد الإجازة",
+    "category": "leave_benefits",
+    "required": "نعم",
+    "risk_if_missing": "نزاع مالي عند انتهاء الخدمة",
+    "description": "استحقاق مقابل مالي عن الإجازات غير المستخدمة عند انتهاء الخدمة",
+    "keywords": "تعويض إجازة، رصيد",
+    "reference": "نموذج عقد العمل – البند 8"
+  },
+  {
+    "field": "annual_leave_entitlement",
+    "title_ar": "الإجازة السنوية",
+    "category": "leave_benefits",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "يستحق العامل إجازة سنوية مدفوعة الأجر وفق النظام.",
+    "keywords": "إجازة سنوية; annual leave; vacation",
+    "reference": "المادة 109"
+  },
+  {
+    "field": "annual_leave_postponement",
+    "title_ar": "ترحيل الإجازة السنوية",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يجوز ترحيل الإجازة السنوية وفق الضوابط النظامية.",
+    "keywords": "ترحيل الإجازة; postpone annual leave",
+    "reference": "المادة 110"
+  },
+  {
+    "field": "annual_leave_scheduling",
+    "title_ar": "تحديد مواعيد الإجازة السنوية",
+    "category": "leave_benefits",
+    "required": "لا",
+    "risk_if_missing": "خلاف حول توقيت الإجازة",
+    "description": "حق الطرف الأول في تحديد مواعيد الإجازة السنوية وفق ظروف العمل",
+    "keywords": "جدولة الإجازة",
+    "reference": "نموذج عقد العمل – البند 8"
+  },
+  {
+    "field": "bereavement_leave",
+    "title_ar": "إجازة الوفاة",
+    "category": "leave_benefits",
+    "required": "لا",
+    "risk_if_missing": "خلافات إنسانية",
+    "description": "إجازة وفاة الأقارب حسب النظام",
+    "keywords": "وفاة، عزاء",
+    "reference": "نظام العمل"
+  },
+  {
+    "field": "emergency_leave",
+    "title_ar": "الإجازة الطارئة",
+    "category": "leave_benefits",
+    "required": "لا",
+    "risk_if_missing": "خلافات تشغيلية عند الغياب",
+    "description": "تنظيم الإجازة الطارئة أو الخاصة إن وجدت",
+    "keywords": "طارئة، غياب",
+    "reference": "المادة 24، سياسة داخلية"
+  },
+  {
+    "field": "exam_leave",
+    "title_ar": "إجازة الامتحانات الدراسية",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يجوز للعامل الحصول على إجازة لأداء الامتحانات وفق الضوابط النظامية.",
+    "keywords": "إجازة الامتحانات; exam leave; study leave",
+    "reference": "المادة 115"
+  },
+  {
+    "field": "first_aid_availability",
+    "title_ar": "توفير الإسعافات الأولية",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يجب توفير أدوات الإسعافات الأولية في مكان العمل.",
+    "keywords": "إسعافات أولية; first aid",
+    "reference": "المادة 142 بعد المائة"
+  },
+  {
+    "field": "hajj_leave",
+    "title_ar": "إجازة الحج",
+    "category": "leave_benefits",
+    "required": "لا",
+    "risk_if_missing": "نزاع في الاستحقاق",
+    "description": "يستحق العامل إجازة مدفوعة الأجر لأداء فريضة الحج لمرة واحدة طوال مدة خدمته، وفق الشروط النظامية.",
+    "keywords": "حج، إجازة، فريضة",
+    "reference": "المادة 114"
+  },
+  {
+    "field": "leave_types",
+    "title_ar": "أنواع الإجازات",
+    "category": "leave_benefits",
+    "required": "نعم",
+    "risk_if_missing": "نزاع مستحقات",
+    "description": "تحديد أنواع الإجازات المستحقة",
+    "keywords": "سنوية، مرضية، طارئة",
+    "reference": "المواد 33-44"
+  },
+  {
+    "field": "maternity_leave",
+    "title_ar": "إجازة الوضع",
+    "category": "leave_benefits",
+    "required": "نعم",
+    "risk_if_missing": "انتهاك حقوق المرأة العاملة",
+    "description": "حقوق الموظفة في إجازة الوضع بأجر كامل وفق النظام",
+    "keywords": "وضع، أمومة، 10 أسابيع، ولادة",
+    "reference": "المادة 50، البند 5 من نموذج العقد"
+  },
+  {
+    "field": "maternity_leave_duration",
+    "title_ar": "مدة إجازة الوضع",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "إجازة الأمومة 12 أسبوعًا.",
+    "keywords": "إجازة وضع; maternity leave",
+    "reference": "المادة 151"
+  },
+  {
+    "field": "maternity_leave_rules",
+    "title_ar": "إجازة الوضع",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "للعاملة الحق في إجازة وضع وفق المدد والأحكام النظامية.",
+    "keywords": "إجازة وضع; maternity leave",
+    "reference": "المادة 151 بعد المائة"
+  },
+  {
+    "field": "nursing_breaks",
+    "title_ar": "فترات الراحة للمرأة المرضعة",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يحق للعاملة المرضع فترات راحة إضافية لإرضاع طفلها وفق النظام.",
+    "keywords": "رضاعة; nursing breaks; breastfeeding break",
+    "reference": "المادة 154 بعد المائة"
+  },
+  {
+    "field": "paternity_leave",
+    "title_ar": "إجازة الأبوة",
+    "category": "leave_benefits",
+    "required": "نعم",
+    "risk_if_missing": "حرمان العامل من حق نظامي",
+    "description": "يستحق العامل إجازة أبوة مدفوعة الأجر لمدة 3 أيام عند ولادة مولود، وتؤخذ خلال 7 أيام من تاريخ الولادة.",
+    "keywords": "أبوة، مولود، 3 أيام",
+    "reference": "المادة 113"
+  },
+  {
+    "field": "periodic_medical_exam",
+    "title_ar": "الفحص الطبي الدوري",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يجوز أو يجب إجراء فحوصات طبية دورية للعاملين بحسب طبيعة العمل.",
+    "keywords": "فحص طبي دوري; periodic medical exam",
+    "reference": "المادة 143 بعد المائة"
+  },
+  {
+    "field": "public_holidays_leave",
+    "title_ar": "إجازات الأعياد والمناسبات الرسمية",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يستحق العامل إجازة بأجر كامل في الأعياد والمناسبات التي تحددها اللائحة.",
+    "keywords": "الأعياد; المناسبات الرسمية; public holidays",
+    "reference": "المادة 112"
+  },
+  {
+    "field": "sibling_death_leave",
+    "title_ar": "إجازة وفاة الأخ أو الأخت",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "إجازة مدفوعة 3 أيام عند وفاة الأخ أو الأخت.",
+    "keywords": "وفاة الأخ; وفاة الأخت; bereavement leave",
+    "reference": "المادة 113"
+  },
+  {
+    "field": "sick_leave",
+    "title_ar": "الإجازة المرضية",
+    "category": "leave_benefits",
+    "required": "نعم",
+    "risk_if_missing": "رفض إجازة المرض أو مطالبات نظامية",
+    "description": "تنظيم وشروط الإجازة المرضية ومدتها واستحقاقها",
+    "keywords": "مرضية، تقرير",
+    "reference": "المادة 24، المادة 41"
+  },
+  {
+    "field": "sick_leave_rules",
+    "title_ar": "الإجازة المرضية",
+    "category": "leave_benefits",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "للعامل الحق في إجازة مرضية وفق المدد والأحكام النظامية.",
+    "keywords": "إجازة مرضية; sick leave; medical leave",
+    "reference": "المادة 117"
+  },
+  {
+    "field": "social_services",
+    "title_ar": "الخدمات الاجتماعية",
+    "category": "leave_benefits",
+    "required": "لا",
+    "risk_if_missing": "انخفاض رضا الموظفين",
+    "description": "خدمات اجتماعية ومرافق للعاملين",
+    "keywords": "خدمات اجتماعية",
+    "reference": "المادة 52"
+  },
+  {
+    "field": "transport_provision",
+    "title_ar": "النقل للعامل",
+    "category": "leave_benefits",
+    "required": "لا",
+    "risk_if_missing": "نزاع مزايا العمل",
+    "description": "إذا وفر صاحب العمل وسيلة نقل للعامل أو بدل نقل، فيجب تنظيم ذلك بوضوح في العقد.",
+    "keywords": "نقل، مواصلات، بدل نقل",
+    "reference": "المادة 30، المادة 25"
+  },
+  {
+    "field": "travel_tickets",
+    "title_ar": "تذاكر السفر",
+    "category": "leave_benefits",
+    "required": "لا",
+    "risk_if_missing": "نزاع على التذاكر",
+    "description": "تذاكر قدوم وعودة العامل وعائلته وفق الضوابط",
+    "keywords": "تذاكر سفر",
+    "reference": "نموذج غير السعودي"
+  },
+  {
+    "field": "unpaid_leave",
+    "title_ar": "إجازة بدون أجر",
+    "category": "leave_benefits",
+    "required": "لا",
+    "risk_if_missing": "خلافات مالية",
+    "description": "تنظيم الإجازة غير المدفوعة",
+    "keywords": "بدون أجر",
+    "reference": "المادة 24"
+  },
+  {
+    "field": "unpaid_leave_rules",
+    "title_ar": "الإجازة بدون أجر",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يجوز الاتفاق على إجازة بدون أجر وفق ما يقرره الطرفان.",
+    "keywords": "إجازة بدون أجر; unpaid leave",
+    "reference": "المادة 116"
+  },
+  {
+    "field": "unused_leave_compensation",
+    "title_ar": "تعويض الإجازة غير المستخدمة",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يستحق العامل أجر الإجازة عن الأيام غير المستخدمة وفق النظام.",
+    "keywords": "تعويض الإجازة; unused leave compensation",
+    "reference": "المادة 111"
+  },
+  {
+    "field": "weekly_rest_day",
+    "title_ar": "الراحة الأسبوعية",
+    "category": "leave_benefits",
+    "required": "نعم",
+    "risk_if_missing": "حرمان من الراحة النظامية",
+    "description": "تحديد يوم الراحة الأسبوعية",
+    "keywords": "راحة أسبوعية",
+    "reference": "المادة 23"
+  },
+  {
+    "field": "accessibility_tools",
+    "title_ar": "أدوات وتجهيزات مساعدة لذوي الإعاقة",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "عدم مواءمة",
+    "description": "تجهيزات مثل منحدرات، تقنيات مساعدة، مرافق",
+    "keywords": "تسهيلات، إمكانية وصول",
+    "reference": "ملحق 2"
+  },
+  {
+    "field": "anti_harassment_policy",
+    "title_ar": "الحماية من الإساءة والتحرش",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "بيئة عمل غير آمنة",
+    "description": "يلتزم صاحب العمل بتوفير بيئة عمل آمنة وخالية من الإساءة اللفظية أو الجسدية أو التحرش، مع اتخاذ الإجراءات النظامية عند المخالفة.",
+    "keywords": "تحرش، إساءة، بيئة آمنة",
+    "reference": "المادة 54، ص35-36"
+  },
+  {
+    "field": "applicable_law_clause",
+    "title_ar": "النظام الواجب التطبيق",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "خلاف قانوني",
+    "description": "يخضع عقد العمل لنظام العمل السعودي ولوائحه التنفيذية والأنظمة والقرارات ذات العلاقة.",
+    "keywords": "نظام العمل، السعودية، قانون",
+    "reference": "المادة الحادية والعشرون، نموذج عقد العمل – البند 13"
+  },
+  {
+    "field": "bank_guarantee_amount",
+    "title_ar": "مبلغ الضمان البنكي",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "رفض أو تعليق الترخيص",
+    "description": "ضمان بنكي مطلوب لبعض الأنشطة",
+    "keywords": "ضمان بنكي",
+    "reference": "ص49"
+  },
+  {
+    "field": "branch_approval_required",
+    "title_ar": "موافقة فتح فرع",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "مخالفة تشغيلية",
+    "description": "اشتراط موافقة الوزارة/الجهة المختصة لفتح فروع",
+    "keywords": "فرع",
+    "reference": "ص61"
+  },
+  {
+    "field": "cancellation_conditions",
+    "title_ar": "حالات إلغاء الترخيص",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "إلغاء نهائي",
+    "description": "أسباب سحب أو إلغاء الترخيص",
+    "keywords": "إلغاء",
+    "reference": "ص52"
+  },
+  {
+    "field": "complaint_channel",
+    "title_ar": "قنوات الشكاوى والتظلم",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "فقدان حق العامل",
+    "description": "تمكين العامل من تقديم شكوى دون ضرر",
+    "keywords": "شكوى، تظلم",
+    "reference": "المادة 55"
+  },
+  {
+    "field": "complaint_non_retaliation",
+    "title_ar": "منع الانتقام من مقدم الشكوى",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "بيئة غير آمنة",
+    "description": "حماية من يتقدم بشكوى من أي إجراء انتقامي",
+    "keywords": "انتقام، شكوى",
+    "reference": "المادة 55 + أفضل ممارسة"
+  },
+  {
+    "field": "confidentiality_violation",
+    "title_ar": "مخالفة السرية والبيانات",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "تسرب معلومات",
+    "description": "إفشاء أسرار العمل أو البيانات الداخلية",
+    "keywords": "سرية، معلومات",
+    "reference": "مستفاد من الجداول"
+  },
+  {
+    "field": "data_update_30_days",
+    "title_ar": "تحديث البيانات خلال 30 يوم",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "مخالفة بيانات",
+    "description": "تحديث بيانات المنشأة خلال مدة محددة",
+    "keywords": "تحديث بيانات",
+    "reference": "ص56"
+  },
+  {
+    "field": "digital_contract_documentation",
+    "title_ar": "التوثيق الرقمي للعقد عبر منصة قوى",
+    "category": "legal_compliance",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "يجب توثيق عقد العمل عبر منصة قوى ليكون معتمدًا قانونيًا.",
+    "keywords": "توثيق العقد; منصة قوى; عقد رقمي; qiwa contract",
+    "reference": "نظام العمل - منصة قوى"
+  },
+  {
+    "field": "disability_accommodation",
+    "title_ar": "تهيئة بيئة العمل لذوي الإعاقة",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "تمييز وعدم امتثال",
+    "description": "ترتيبات تيسيرية ومرافق مناسبة للعاملين ذوي الإعاقة",
+    "keywords": "إعاقة، تهيئة",
+    "reference": "ملحق 2"
+  },
+  {
+    "field": "disciplinary_investigation",
+    "title_ar": "التحقيق قبل توقيع الجزاء",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "لا يجوز توقيع جزاء تأديبي على العامل إلا بعد التحقيق معه.",
+    "keywords": "تحقيق تأديبي، disciplinary investigation",
+    "reference": "المادة 71"
+  },
+  {
+    "field": "employee_records_keeping",
+    "title_ar": "الاحتفاظ بسجلات العاملين",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يجب على صاحب العمل الاحتفاظ بسجلات وملفات العاملين في مكان العمل.",
+    "keywords": "سجلات العاملين; employee records; labor records",
+    "reference": "المادة 17"
+  },
+  {
+    "field": "employer_treatment_of_injury",
+    "title_ar": "علاج العامل المصاب",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يلتزم صاحب العمل بعلاج العامل المصاب وفق أحكام النظام.",
+    "keywords": "علاج العامل; work injury treatment",
+    "reference": "المادة 133 بعد المائة"
+  },
+  {
+    "field": "equality_non_discrimination",
+    "title_ar": "عدم التمييز",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "مخالفة حقوقية",
+    "description": "منع التمييز بين العاملين دون سبب مشروع",
+    "keywords": "تمييز، مساواة",
+    "reference": "legal"
+  },
+  {
+    "field": "first_aid_provision",
+    "title_ar": "توفير الإسعافات الأولية",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "مخالفة وسلامة منخفضة",
+    "description": "يلتزم صاحب العمل بتوفير أدوات ومستلزمات الإسعافات الأولية المناسبة في موقع العمل وفق متطلبات السلامة والصحة المهنية.",
+    "keywords": "إسعافات أولية، سلامة",
+    "reference": "متطلبات السلامة والصحة المهنية"
+  },
+  {
+    "field": "foreign_investor_docs",
+    "title_ar": "متطلبات المستثمر الأجنبي",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "رفض طلب",
+    "description": "مستندات إضافية للمستثمر الأجنبي أو الشريك الأجنبي",
+    "keywords": "مستثمر أجنبي",
+    "reference": "ص52"
+  },
+  {
+    "field": "grievance_right",
+    "title_ar": "حق التظلم والاعتراض",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "انتقاص حقوق العامل وضعف الحماية الإجرائية",
+    "description": "للعامل حق التظلم والاعتراض على الجزاء التأديبي وفق الإجراءات والمدد النظامية، ويجب تمكينه من ممارسة هذا الحق دون انتقاص.",
+    "keywords": "اعتراض، تظلم، جزاء",
+    "reference": "المادة 71"
+  },
+  {
+    "field": "hazardous_work_restriction",
+    "title_ar": "حظر الأعمال الخطرة",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "تعريض العامل للخطر",
+    "description": "منع تكليف العامل بأعمال خطرة دون ضوابط",
+    "keywords": "أعمال خطرة، سلامة",
+    "reference": "المادة 32"
+  },
+  {
+    "field": "health_care",
+    "title_ar": "الرعاية الصحية والتأمين الطبي",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "مخالفة نظام الضمان الصحي وتحمل تكاليف علاج الموظف",
+    "description": "يلتزم صاحب العمل بتوفير الرعاية الصحية والتأمين الطبي للعامل وفق الأنظمة المعمول بها، ولأسرته إذا نص النظام أو العقد على ذلك.",
+    "keywords": "تأمين طبي، علاج، رعاية صحية",
+    "reference": "المادة 49، البند رابعاً، نموذج عقد العمل – البند 11.5"
+  },
+  {
+    "field": "health_safety_rules",
+    "title_ar": "السلامة والصحة المهنية",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "وقوع إصابات عمل ومسؤولية قانونية كاملة",
+    "description": "يلتزم صاحب العمل والعامل بقواعد السلامة والصحة المهنية، واستخدام أدوات الوقاية، والالتزام بالتعليمات اللازمة للحد من مخاطر وإصابات العمل.",
+    "keywords": "سلامة، وقاية، إصابات، صحة مهنية",
+    "reference": "المواد 121 وما بعدها، والمواد ذات الصلة بالسلامة"
+  },
+  {
+    "field": "injury_reporting",
+    "title_ar": "الإبلاغ عن إصابة العمل",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "فقدان حقوق الإصابة",
+    "description": "إلزام بالإبلاغ الفوري عن إصابات العمل",
+    "keywords": "إصابة عمل، بلاغ",
+    "reference": "المادة 28"
+  },
+  {
+    "field": "juvenile_work_conditions",
+    "title_ar": "شروط تشغيل الأحداث",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يشترط لتشغيل الأحداث التقيد بالأحكام الخاصة الواردة في النظام.",
+    "keywords": "تشغيل الأحداث; juvenile employment",
+    "reference": "المادة 162 بعد المائة"
+  },
+  {
+    "field": "labor_services_license",
+    "title_ar": "قواعد نشاط الاستقدام والخدمات العمالية",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "إيقاف النشاط",
+    "description": "ضوابط مزاولة نشاط الاستقدام وتقديم الخدمات العمالية",
+    "keywords": "استقدام، خدمات عمالية",
+    "reference": "ملحق 4"
+  },
+  {
+    "field": "license_amendment_request",
+    "title_ar": "طلب تعديل الترخيص",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "بيانات غير محدثة",
+    "description": "تعديل النشاط أو البيانات يتطلب موافقة",
+    "keywords": "تعديل ترخيص",
+    "reference": "ص52"
+  },
+  {
+    "field": "license_validity_years",
+    "title_ar": "مدة الترخيص",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "انتهاء مزاولة",
+    "description": "مدة صلاحية الترخيص (5 أو 10 سنوات حسب النوع)",
+    "keywords": "مدة الترخيص",
+    "reference": "ص49"
+  },
+  {
+    "field": "licensing_entity_type",
+    "title_ar": "نوع الكيان المرخص",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "رفض الترخيص",
+    "description": "تصنيف المنشأة (شركة موارد بشرية كبيرة/متوسطة/صغيرة)",
+    "keywords": "كيان، ترخيص",
+    "reference": "ص48"
+  },
+  {
+    "field": "minimum_working_age",
+    "title_ar": "الحد الأدنى لعمر العمل",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يحدد النظام الحد الأدنى لسن العمل وشروط تشغيل الأحداث.",
+    "keywords": "سن العمل; الحد الأدنى للعمر; minimum working age",
+    "reference": "المادة 161 بعد المائة"
+  },
+  {
+    "field": "minor_employment_age",
+    "title_ar": "الحد الأدنى لعمر العمل",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "مخالفة تشغيل أحداث",
+    "description": "منع توظيف من هم دون السن النظامي",
+    "keywords": "حدث، عمر العمل",
+    "reference": "المادة 33"
+  },
+  {
+    "field": "minor_night_work_ban",
+    "title_ar": "منع تشغيل الأحداث ليلًا",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "مخالفة قانونية",
+    "description": "حظر تشغيل الأحداث في ساعات الليل",
+    "keywords": "أحداث، ليل",
+    "reference": "المادة 34"
+  },
+  {
+    "field": "no_dismissal_due_to_pregnancy",
+    "title_ar": "منع فصل العاملة بسبب الحمل أو الوضع",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "لا يجوز فصل العاملة أو إنذارها بالفصل بسبب الحمل أو الوضع وفق النظام.",
+    "keywords": "فصل الحامل; maternity dismissal protection",
+    "reference": "المادة 155 بعد المائة"
+  },
+  {
+    "field": "no_double_penalty",
+    "title_ar": "منع تعدد العقوبات",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "مخالفة حقوقية",
+    "description": "لا يجوز معاقبة العامل مرتين على نفس المخالفة",
+    "keywords": "عقوبتين، مخالفة واحدة",
+    "reference": "المادة 63"
+  },
+  {
+    "field": "no_hazardous_work_for_juveniles",
+    "title_ar": "منع تشغيل الأحداث في الأعمال الخطرة",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "لا يجوز تشغيل الأحداث في الأعمال أو الصناعات الخطرة أو الضارة.",
+    "keywords": "الأعمال الخطرة; الأحداث; hazardous work juveniles",
+    "reference": "المادة 161 بعد المائة"
+  },
+  {
+    "field": "outsourcing_limits",
+    "title_ar": "حدود تقديم العمالة للغير",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "مخالفة نشاط",
+    "description": "تنظيم تقديم العمالة أو الخدمات للغير",
+    "keywords": "تأجير عمالة",
+    "reference": "ص57-58"
+  },
+  {
+    "field": "outsourcing_worker_rights",
+    "title_ar": "حقوق العمالة المقدمة للغير",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "مسؤولية تضامنية",
+    "description": "حماية حقوق العمالة في عقود تقديم الخدمات",
+    "keywords": "عمالة، طرف ثالث",
+    "reference": "ملحق 4"
+  },
+  {
+    "field": "ownership_change_approval",
+    "title_ar": "موافقة تغيير الملكية",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "بطلان الإجراء",
+    "description": "نقل الملكية أو تغيير الشركاء يحتاج موافقة",
+    "keywords": "ملكية، شركاء",
+    "reference": "ص43،52"
+  },
+  {
+    "field": "paid_capital_minimum",
+    "title_ar": "الحد الأدنى لرأس المال",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "رفض الترخيص",
+    "description": "اشتراطات رأس المال حسب نوع الشركة",
+    "keywords": "رأس مال",
+    "reference": "ص48-49"
+  },
+  {
+    "field": "permitted_activities",
+    "title_ar": "الأنشطة المصرح بها",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "مزاولة غير نظامية",
+    "description": "الأنشطة المسموح بها لكل نوع ترخيص",
+    "keywords": "أنشطة، تصريح",
+    "reference": "ص48"
+  },
+  {
+    "field": "platform_registration",
+    "title_ar": "التسجيل في المنصة المعتمدة",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "منع التشغيل",
+    "description": "استخدام المنصة الرسمية للوزارة/الوكالة",
+    "keywords": "منصة",
+    "reference": "ص57-62"
+  },
+  {
+    "field": "pregnant_worker_protection",
+    "title_ar": "حماية المرأة الحامل في العمل",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "تتمتع العاملة الحامل بحماية نظامية أثناء الحمل والوضع.",
+    "keywords": "حماية الحامل; pregnant worker protection",
+    "reference": "المواد 151-157 بعد المائة"
+  },
+  {
+    "field": "recruitment_fees_ban",
+    "title_ar": "حظر أخذ مبالغ مقابل التوظيف من الباحثين عن عمل",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "مخالفة تنظيمية",
+    "description": "منع تحصيل رسوم من طالبي العمل",
+    "keywords": "رسوم توظيف",
+    "reference": "ملحق 3"
+  },
+  {
+    "field": "recruitment_license_rules",
+    "title_ar": "ضوابط نشاط التوسط بالتوظيف",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "مخالفة تنظيمية",
+    "description": "شروط ترخيص شركات ومكاتب التوظيف والوساطة",
+    "keywords": "ترخيص، توظيف",
+    "reference": "ملحق 3 المواد 1-9"
+  },
+  {
+    "field": "renewal_deadline_days",
+    "title_ar": "مهلة تجديد الترخيص",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "توقف النشاط",
+    "description": "التقديم قبل انتهاء الترخيص بمدة محددة",
+    "keywords": "تجديد",
+    "reference": "ص52"
+  },
+  {
+    "field": "safe_work_environment",
+    "title_ar": "توفير بيئة عمل آمنة",
+    "category": "legal_compliance",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "يلتزم صاحب العمل بتوفير بيئة عمل آمنة وخالية من المخاطر بقدر الإمكان.",
+    "keywords": "بيئة عمل آمنة; work safety; safe environment",
+    "reference": "المادة 121 بعد المائة"
+  },
+  {
+    "field": "safety_equipment_provision",
+    "title_ar": "توفير أدوات السلامة المهنية",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يلتزم صاحب العمل بتوفير أدوات ووسائل الوقاية والسلامة المهنية.",
+    "keywords": "السلامة المهنية; معدات الوقاية; safety equipment",
+    "reference": "المادة 122 بعد المائة"
+  },
+  {
+    "field": "safety_violations",
+    "title_ar": "مخالفات السلامة المهنية",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "حوادث وإصابات",
+    "description": "مخالفة تعليمات الصحة والسلامة المهنية",
+    "keywords": "سلامة، PPE",
+    "reference": "ص35"
+  },
+  {
+    "field": "social_insurance",
+    "title_ar": "التأمينات الاجتماعية",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "غرامات مالية ومطالبات نظامية",
+    "description": "يلتزم صاحب العمل بتسجيل العامل في المؤسسة العامة للتأمينات الاجتماعية وسداد الاشتراكات النظامية.",
+    "keywords": "تأمينات، GOSI، تسجيل، اشتراكات",
+    "reference": "نظام التأمينات، البند رابعاً، نموذج عقد العمل – البند 11.6"
+  },
+  {
+    "field": "suspension_conditions",
+    "title_ar": "حالات تعليق الترخيص",
+    "category": "legal_compliance",
+    "required": "نعم",
+    "risk_if_missing": "إيقاف النشاط",
+    "description": "حالات المخالفات التي تؤدي لتعليق مؤقت",
+    "keywords": "تعليق",
+    "reference": "ص60"
+  },
+  {
+    "field": "women_night_work_rules",
+    "title_ar": "ضوابط عمل المرأة ليلًا",
+    "category": "legal_compliance",
+    "required": "لا",
+    "risk_if_missing": "مخالفة تشغيلية وغرامات",
+    "description": "تنظيم تشغيل المرأة في الفترات الليلية وفق النظام",
+    "keywords": "عمل المرأة، ليلي",
+    "reference": "المادة 31"
+  },
+  {
+    "field": "work_injury_definition",
+    "title_ar": "إصابة العمل",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "تحدد أحكام النظام ما يعد إصابة عمل وما يترتب عليها من حقوق.",
+    "keywords": "إصابة العمل; work injury; occupational injury",
+    "reference": "المادة 134 بعد المائة"
+  },
+  {
+    "field": "worker_safety_training",
+    "title_ar": "تدريب العامل على مخاطر العمل",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يجب توعية العامل بمخاطر العمل وطرق الوقاية منها.",
+    "keywords": "تدريب السلامة; مخاطر العمل; safety training",
+    "reference": "المادة 123 بعد المائة"
+  },
+  {
+    "field": "accommodation_transport_for_workers",
+    "title_ar": "السكن والنقل للعمالة",
+    "category": "operations",
+    "required": "لا",
+    "risk_if_missing": "شكاوى وتشغيل ضعيف",
+    "description": "توفير سكن أو نقل وفق الضوابط عند الحاجة",
+    "keywords": "سكن، نقل",
+    "reference": "ص57"
+  },
+  {
+    "field": "service_quality_standards",
+    "title_ar": "معايير جودة الخدمة",
+    "category": "operations",
+    "required": "لا",
+    "risk_if_missing": "ضعف السمعة",
+    "description": "سياسات تشغيل ومعايير أداء ومتابعة جودة",
+    "keywords": "جودة خدمة",
+    "reference": "ص50"
+  },
+  {
+    "field": "worker_file_records",
+    "title_ar": "سجلات وملفات العمالة",
+    "category": "operations",
+    "required": "نعم",
+    "risk_if_missing": "فقدان مستندات",
+    "description": "حفظ بيانات العقود، الإقامة، الرواتب، الملفات",
+    "keywords": "سجلات",
+    "reference": "ص56"
+  },
+  {
+    "field": "employee_birth_date",
+    "title_ar": "تاريخ الميلاد",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التحقق العمري",
+    "description": "تاريخ ميلاد العامل حسب الوثائق الرسمية",
+    "keywords": "ميلاد",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_email",
+    "title_ar": "البريد الإلكتروني للعامل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "نزاع في الإشعارات",
+    "description": "البريد الإلكتروني المعتمد للعامل",
+    "keywords": "بريد، email",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_fax",
+    "title_ar": "فاكس العامل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "نقص في بيانات التواصل",
+    "description": "رقم فاكس الطرف الثاني إن وجد",
+    "keywords": "فاكس",
+    "reference": "مقدمة العقد"
+  },
+  {
+    "field": "employee_gender",
+    "title_ar": "الجنس",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "وصف ناقص للبيانات",
+    "description": "تحديد جنس العامل في نموذج العقد",
+    "keywords": "جنس",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_id_number",
+    "title_ar": "رقم الهوية / الإقامة",
+    "category": "parties",
+    "required": "نعم",
+    "risk_if_missing": "صعوبة التحقق والإثبات",
+    "description": "رقم الوثيقة الرسمية للعامل",
+    "keywords": "هوية، إقامة",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_id_type",
+    "title_ar": "نوع الهوية",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التحقق من الشخصية",
+    "description": "تحديد ما إذا كانت الوثيقة هوية وطنية أو إقامة",
+    "keywords": "نوع الهوية",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_marital_status",
+    "title_ar": "الحالة الاجتماعية",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "بيانات ناقصة",
+    "description": "تحديد الحالة الاجتماعية للعامل",
+    "keywords": "حالة اجتماعية",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_mobile_number",
+    "title_ar": "رقم جوال العامل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التواصل والإشعار",
+    "description": "رقم جوال العامل المعتمد في العقد",
+    "keywords": "جوال، mobile",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_name",
+    "title_ar": "اسم العامل",
+    "category": "parties",
+    "required": "نعم",
+    "risk_if_missing": "عدم وضوح الطرف الثاني",
+    "description": "تحديد اسم العامل كما في الوثائق الرسمية",
+    "keywords": "اسم العامل، employee",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_national_address",
+    "title_ar": "العنوان الوطني للعامل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التبليغ",
+    "description": "العنوان الوطني أو عنوان المراسلات المعتمد الخاص بالعامل.",
+    "keywords": "عنوان وطني، مراسلات",
+    "reference": "نموذج عقد العمل"
+  },
+  {
+    "field": "employee_nationality",
+    "title_ar": "الجنسية",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "ضعف التوصيف",
+    "description": "تحديد جنسية العامل",
+    "keywords": "جنسية",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_passport_number",
+    "title_ar": "رقم الجواز",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "ضعف بيانات العامل غير السعودي",
+    "description": "يستخدم خصوصًا للعامل غير السعودي",
+    "keywords": "جواز، passport",
+    "reference": "نموذج عقد العمل – بيانات الطرف الثاني"
+  },
+  {
+    "field": "employee_po_box",
+    "title_ar": "صندوق البريد للعامل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "ضعف بيانات المراسلات",
+    "description": "صندوق البريد للطرف الثاني",
+    "keywords": "ص ب، صندوق بريد",
+    "reference": "مقدمة العقد"
+  },
+  {
+    "field": "employee_postal_code",
+    "title_ar": "الرمز البريدي للعامل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التبليغ",
+    "description": "الرمز البريدي للطرف الثاني",
+    "keywords": "رمز بريدي",
+    "reference": "مقدمة العقد"
+  },
+  {
+    "field": "employer_entity_type",
+    "title_ar": "نوع المنشأة",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "ضعف توصيف الطرف الأول",
+    "description": "تحديد نوع المنشأة أو صفتها النظامية",
+    "keywords": "نوع المنشأة",
+    "reference": "نموذج عقد العمل – بيانات الطرف الأول"
+  },
+  {
+    "field": "employer_fax",
+    "title_ar": "فاكس صاحب العمل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "نقص في بيانات التواصل الرسمية",
+    "description": "رقم الفاكس للطرف الأول إن وجد",
+    "keywords": "فاكس",
+    "reference": "مقدمة العقد"
+  },
+  {
+    "field": "employer_hrsd_id",
+    "title_ar": "رقم المنشأة في الموارد البشرية",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التحقق من الجهة",
+    "description": "رقم تعريف المنشأة لدى الموارد البشرية والتنمية الاجتماعية",
+    "keywords": "رقم المنشأة، HRSD",
+    "reference": "نموذج عقد العمل – بيانات الطرف الأول"
+  },
+  {
+    "field": "employer_name",
+    "title_ar": "اسم المنشأة / صاحب العمل",
+    "category": "parties",
+    "required": "نعم",
+    "risk_if_missing": "عدم وضوح الطرف المتعاقد",
+    "description": "تحديد اسم الطرف الأول بشكل صريح",
+    "keywords": "صاحب العمل، employer",
+    "reference": "نموذج عقد العمل – بيانات الطرف الأول"
+  },
+  {
+    "field": "employer_national_address",
+    "title_ar": "العنوان الوطني للمنشأة",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التبليغ والمراسلات",
+    "description": "العنوان الوطني أو عنوان المراسلات المعتمد الخاص بصاحب العمل أو المنشأة.",
+    "keywords": "عنوان وطني، منشأة، مراسلات",
+    "reference": "نموذج عقد العمل"
+  },
+  {
+    "field": "employer_official_email",
+    "title_ar": "البريد الإلكتروني الرسمي للمنشأة",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "نزاع في الإشعارات",
+    "description": "تحديد البريد الرسمي المعتمد للمراسلات",
+    "keywords": "بريد رسمي، email",
+    "reference": "نموذج عقد العمل – بيانات الطرف الأول"
+  },
+  {
+    "field": "employer_phone",
+    "title_ar": "رقم هاتف المنشأة",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التواصل",
+    "description": "رقم التواصل الرسمي للمنشأة",
+    "keywords": "هاتف، جوال",
+    "reference": "نموذج عقد العمل – بيانات الطرف الأول"
+  },
+  {
+    "field": "employer_po_box",
+    "title_ar": "صندوق البريد لصاحب العمل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "ضعف بيانات المراسلات",
+    "description": "صندوق البريد للطرف الأول",
+    "keywords": "ص ب، صندوق بريد",
+    "reference": "مقدمة العقد"
+  },
+  {
+    "field": "employer_postal_code",
+    "title_ar": "الرمز البريدي لصاحب العمل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التبليغ",
+    "description": "الرمز البريدي للطرف الأول",
+    "keywords": "رمز بريدي",
+    "reference": "مقدمة العقد"
+  },
+  {
+    "field": "employer_signatory_capacity",
+    "title_ar": "صفة ممثل صاحب العمل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "الطعن في الصلاحية",
+    "description": "تحديد المسمى أو الصفة النظامية للموقع عن المنشأة",
+    "keywords": "صفة، capacity",
+    "reference": "نموذج عقد العمل – بيانات الطرف الأول"
+  },
+  {
+    "field": "employer_signatory_id",
+    "title_ar": "رقم هوية ممثل صاحب العمل",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "ضعف التحقق من الهوية",
+    "description": "رقم هوية من يمثل الطرف الأول في توقيع العقد",
+    "keywords": "هوية ممثل",
+    "reference": "نموذج عقد العمل – بيانات الطرف الأول"
+  },
+  {
+    "field": "employer_signatory_name",
+    "title_ar": "اسم ممثل صاحب العمل",
+    "category": "parties",
+    "required": "نعم",
+    "risk_if_missing": "نزاع على الصفة والتوقيع",
+    "description": "تحديد الشخص الذي يوقع العقد نيابة عن الطرف الأول",
+    "keywords": "ممثل، توقيع",
+    "reference": "نموذج عقد العمل – بيانات الطرف الأول"
+  },
+  {
+    "field": "employer_unified_national_no",
+    "title_ar": "الرقم الوطني الموحد للمنشأة",
+    "category": "parties",
+    "required": "لا",
+    "risk_if_missing": "صعوبة التحقق النظامي",
+    "description": "تحديد الرقم الوطني الموحد للمنشأة",
+    "keywords": "رقم موحد",
+    "reference": "نموذج عقد العمل – بيانات الطرف الأول"
+  },
+  {
+    "field": "cyber_data_protection",
+    "title_ar": "حماية الأنظمة والبيانات",
+    "category": "security",
+    "required": "لا",
+    "risk_if_missing": "اختراق أو تسرب",
+    "description": "ضوابط حفظ المعلومات والأنظمة الإلكترونية",
+    "keywords": "أمن معلومات",
+    "reference": "ص57"
+  },
+  {
+    "field": "article77_compensation",
+    "title_ar": "تعويض الفسخ غير المشروع",
+    "category": "termination_exit",
+    "required": "نعم",
+    "risk_if_missing": "مطالبات مالية ونزاعات قضائية",
+    "description": "يستحق الطرف المتضرر تعويضًا عند إنهاء العقد دون سبب مشروع وفق الضوابط المحددة نظامًا.",
+    "keywords": "مادة 77، تعويض، فصل تعسفي",
+    "reference": "المادة 77"
+  },
+  {
+    "field": "article80_termination_cases",
+    "title_ar": "حالات الفصل دون مكافأة أو إشعار",
+    "category": "termination_exit",
+    "required": "نعم",
+    "risk_if_missing": "فصل غير مشروع",
+    "description": "يجوز لصاحب العمل فصل العامل دون مكافأة أو إشعار في الحالات المحددة حصراً في النظام.",
+    "keywords": "مادة 80، فصل فوري",
+    "reference": "المادة 80"
+  },
+  {
+    "field": "article80_termination_clause",
+    "title_ar": "إنهاء العقد وفق المادة 80",
+    "category": "termination_exit",
+    "required": "لا",
+    "risk_if_missing": "نزاع فصل جسيم",
+    "description": "يمكن إضافة بند يوضح الإنهاء وفق أحكام المادة 80 من النظام",
+    "keywords": "المادة 80",
+    "reference": "نموذج عقد العمل – الشروط الإضافية"
+  },
+  {
+    "field": "article81_employee_exit",
+    "title_ar": "حق العامل في ترك العمل فورًا",
+    "category": "termination_exit",
+    "required": "نعم",
+    "risk_if_missing": "حرمان العامل من حقه",
+    "description": "يجوز للعامل ترك العمل دون إشعار مع احتفاظه بحقوقه في الحالات المنصوص عليها نظامًا.",
+    "keywords": "مادة 81، ترك العمل",
+    "reference": "المادة 81"
+  },
+  {
+    "field": "company_property_return",
+    "title_ar": "إعادة ممتلكات الشركة",
+    "category": "termination_exit",
+    "required": "لا",
+    "risk_if_missing": "فقدان أصول المنشأة",
+    "description": "تسليم العهد والأجهزة عند انتهاء العقد",
+    "keywords": "عهدة، أجهزة",
+    "reference": "termination"
+  },
+  {
+    "field": "compensation_for_no_notice",
+    "title_ar": "تعويض عدم الالتزام بمهلة الإشعار",
+    "category": "termination_exit",
+    "required": "نعم",
+    "risk_if_missing": "نزاع تعويضي مباشر",
+    "description": "تعويض يعادل أجر 60 يومًا عند عدم الالتزام بمهلة الإشعار",
+    "keywords": "تعويض، 60 يوم",
+    "reference": "المادة العشرون"
+  },
+  {
+    "field": "death_compensation_work_injury",
+    "title_ar": "تعويض الوفاة بسبب إصابة العمل",
+    "category": "termination_exit",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يستحق المستحقون تعويضاً في حال وفاة العامل بسبب إصابة العمل وفق النظام.",
+    "keywords": "تعويض الوفاة; death compensation; work injury",
+    "reference": "المادة 138 بعد المائة"
+  },
+  {
+    "field": "dismissal_penalty",
+    "title_ar": "الفصل كجزاء نهائي",
+    "category": "termination_exit",
+    "required": "نعم",
+    "risk_if_missing": "فصل غير مشروع",
+    "description": "الفصل عند المخالفات الجسيمة أو التكرار",
+    "keywords": "فصل، إنهاء",
+    "reference": "جداول الجزاءات"
+  },
+  {
+    "field": "document_handover",
+    "title_ar": "تسليم الوثائق والشهادات",
+    "category": "termination_exit",
+    "required": "لا",
+    "risk_if_missing": "تعطيل انتقال العامل",
+    "description": "إعادة الوثائق والشهادات للعامل عند انتهاء العلاقة",
+    "keywords": "شهادة، وثائق",
+    "reference": "termination"
+  },
+  {
+    "field": "end_of_service_award",
+    "title_ar": "مكافأة نهاية الخدمة",
+    "category": "termination_exit",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "يستحق العامل مكافأة نهاية خدمة تحسب وفق مدة خدمته في العمل.",
+    "keywords": "مكافأة نهاية الخدمة، end of service",
+    "reference": "المادة 84"
+  },
+  {
+    "field": "final_settlement",
+    "title_ar": "المخالصة النهائية",
+    "category": "termination_exit",
+    "required": "لا",
+    "risk_if_missing": "نزاعات بعد الخروج",
+    "description": "تسوية المستحقات النهائية للطرفين",
+    "keywords": "مخالصة، مستحقات",
+    "reference": "termination"
+  },
+  {
+    "field": "injury_disability_compensation",
+    "title_ar": "تعويض العجز الناتج عن إصابة العمل",
+    "category": "termination_exit",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يستحق العامل تعويضاً في حال العجز الناتج عن إصابة العمل وفق النظام.",
+    "keywords": "تعويض العجز; disability compensation; work injury",
+    "reference": "المادة 138 بعد المائة"
+  },
+  {
+    "field": "mutual_termination_clause",
+    "title_ar": "إنهاء العقد بالتراضي",
+    "category": "termination_exit",
+    "required": "لا",
+    "risk_if_missing": "نزاع عند الإنهاء الرضائي",
+    "description": "يمكن النص على إنهاء العقد باتفاق الطرفين كتابة أو إلكترونيًا",
+    "keywords": "إنهاء بالتراضي",
+    "reference": "نموذج عقد العمل – الشروط الإضافية"
+  },
+  {
+    "field": "no_eos_for_part_time",
+    "title_ar": "عدم استحقاق مكافأة نهاية الخدمة لبعض الوقت",
+    "category": "termination_exit",
+    "required": "لا",
+    "risk_if_missing": "مطالبة غير صحيحة",
+    "description": "النص على عدم استحقاق مكافأة نهاية الخدمة في هذا النموذج",
+    "keywords": "بعض الوقت، نهاية خدمة",
+    "reference": "نموذج عقد لبعض الوقت"
+  },
+  {
+    "field": "no_eos_for_temporary",
+    "title_ar": "عدم استحقاق مكافأة نهاية خدمة للمؤقت",
+    "category": "termination_exit",
+    "required": "لا",
+    "risk_if_missing": "مطالبة غير صحيحة",
+    "description": "لا يستحق العامل المؤقت مكافأة نهاية الخدمة في النموذج المذكور",
+    "keywords": "مؤقت، نهاية خدمة",
+    "reference": "نموذج العقد المؤقت"
+  },
+  {
+    "field": "no_notice_during_probation",
+    "title_ar": "إنهاء العقد خلال التجربة دون إشعار",
+    "category": "termination_exit",
+    "required": "لا",
+    "risk_if_missing": "مطالبة تعويض غير صحيحة",
+    "description": "يحق للطرف الأول الإنهاء خلال التجربة دون إشعار أو تعويض",
+    "keywords": "تجربة، إنهاء فوري",
+    "reference": "المادة السابعة"
+  },
+  {
+    "field": "notice_period",
+    "title_ar": "مهلة الإشعار",
+    "category": "termination_exit",
+    "required": "نعم",
+    "risk_if_missing": "إنهاء مفاجئ يترتب عليه دفع تعويض",
+    "description": "في العقد غير المحدد المدة، يجب أن يكون الإنهاء بسبب مشروع مع إشعار مكتوب للطرف الآخر قبل الإنهاء بمدة لا تقل عن 60 يومًا إذا كان أجر العامل يدفع شهريًا، ولا تقل عن 30 يومًا بالنسبة إلى غيره، ما لم يتفق الطرفان على مدة أطول.",
+    "keywords": "إشعار، إنهاء، 60 يوم، 30 يوم",
+    "reference": "المادة 75"
+  },
+  {
+    "field": "resignation_notice_employee",
+    "title_ar": "إشعار الاستقالة للعامل",
+    "category": "termination_exit",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "يجب إشعار صاحب العمل قبل 30 يومًا.",
+    "keywords": "إشعار الاستقالة; resignation notice",
+    "reference": "المادة 75"
+  },
+  {
+    "field": "resignation_process",
+    "title_ar": "إجراءات الاستقالة",
+    "category": "termination_exit",
+    "required": "لا",
+    "risk_if_missing": "رفض أو تأخير الاستقالة",
+    "description": "توضيح طريقة تقديم الاستقالة",
+    "keywords": "استقالة",
+    "reference": "termination"
+  },
+  {
+    "field": "termination_cases",
+    "title_ar": "حالات انتهاء عقد العمل",
+    "category": "termination_exit",
+    "required": "نعم",
+    "risk_if_missing": "نزاعات فصل",
+    "description": "ينتهي عقد العمل في الحالات النظامية مثل: اتفاق الطرفين على الإنهاء، انتهاء مدة العقد المحدد، رغبة أحد الطرفين مع مراعاة الإشعار، بلوغ سن التقاعد، القوة القاهرة، إغلاق المنشأة، الاستقالة المقبولة، أو الفصل المشروع وفق النظام.",
+    "keywords": "انتهاء العقد، فصل، استقالة، فسخ",
+    "reference": "المادة 57، المادة 74، المادة 80"
+  },
+  {
+    "field": "termination_notice_employer",
+    "title_ar": "إشعار إنهاء العقد من صاحب العمل",
+    "category": "termination_exit",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "يجب إشعار العامل قبل 60 يومًا.",
+    "keywords": "إشعار إنهاء العقد; termination notice",
+    "reference": "المادة 75"
+  },
+  {
+    "field": "transport_costs",
+    "title_ar": "تكاليف عودة العامل",
+    "category": "termination_exit",
+    "required": "نعم",
+    "risk_if_missing": "تحمل المنشأة غرامات ترحيل أو تذاكر عودة قسرية",
+    "description": "يلتزم صاحب العمل بتحمل تكاليف عودة العامل غير السعودي إلى بلده عند انتهاء العلاقة التعاقدية في الحالات التي يقررها النظام، ما لم يكن سبب عدم العودة راجعًا إلى العامل أو اتفق على غير ذلك في الحدود النظامية.",
+    "keywords": "عودة، تذكرة، سفر",
+    "reference": "التزامات صاحب العمل"
+  },
+  {
+    "field": "unjustified_termination_compensation",
+    "title_ar": "تعويض الإنهاء دون سبب مشروع",
+    "category": "termination_exit",
+    "required": "نعم",
+    "risk_if_missing": "مطالبة مالية كبيرة",
+    "description": "تعويض إضافي يعادل أجر 90 يومًا في حال الإنهاء دون سبب مشروع",
+    "keywords": "90 يوم، فصل غير مشروع",
+    "reference": "المادة العشرون"
+  },
+  {
+    "field": "assign_overtime_in_writing",
+    "title_ar": "تكليف العمل الإضافي كتابة أو إلكترونيًا",
+    "category": "work_schedule",
+    "required": "لا",
+    "risk_if_missing": "إنكار التكليف أو المطالبة",
+    "description": "يجب أن يكون تكليف العامل بساعات إضافية موثقًا كتابة أو إلكترونيًا",
+    "keywords": "تكليف إضافي",
+    "reference": "نموذج عقد العمل – البند 11.4"
+  },
+  {
+    "field": "attendance_absence_rules",
+    "title_ar": "الحضور والغياب",
+    "category": "work_schedule",
+    "required": "نعم",
+    "risk_if_missing": "خلافات انضباطية",
+    "description": "تنظيم الغياب والتأخير والحضور",
+    "keywords": "غياب، تأخير",
+    "reference": "المواد 31-32"
+  },
+  {
+    "field": "attendance_penalties",
+    "title_ar": "مخالفات الدوام والانضباط",
+    "category": "work_schedule",
+    "required": "نعم",
+    "risk_if_missing": "نزاعات تأخير وغياب",
+    "description": "عقوبات التأخير والغياب وترك العمل",
+    "keywords": "تأخير، غياب",
+    "reference": "ص34"
+  },
+  {
+    "field": "attendance_system",
+    "title_ar": "نظام الحضور والانصراف",
+    "category": "work_schedule",
+    "required": "لا",
+    "risk_if_missing": "صعوبة إثبات الدوام",
+    "description": "اعتماد وسيلة واضحة لتسجيل الحضور",
+    "keywords": "حضور، بصمة",
+    "reference": "المادة 18"
+  },
+  {
+    "field": "break_times",
+    "title_ar": "فترات الراحة",
+    "category": "work_schedule",
+    "required": "نعم",
+    "risk_if_missing": "مخالفة تشغيلية",
+    "description": "فترات الراحة أثناء اليوم",
+    "keywords": "استراحة، راحة",
+    "reference": "المادة 27"
+  },
+  {
+    "field": "daily_rest_breaks",
+    "title_ar": "فترات الراحة خلال يوم العمل",
+    "category": "work_schedule",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "للعامل الحق في فترات راحة خلال يوم العمل وفق النظام.",
+    "keywords": "فترات الراحة; break time; rest periods",
+    "reference": "المادة 101"
+  },
+  {
+    "field": "daily_working_hours_limit",
+    "title_ar": "الحد الأقصى لساعات العمل اليومية",
+    "category": "work_schedule",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "لا يجوز تشغيل العامل أكثر من الحد الأقصى لساعات العمل اليومية إلا وفق النظام.",
+    "keywords": "ساعات العمل اليومية; daily working hours",
+    "reference": "المادة 98"
+  },
+  {
+    "field": "juvenile_working_hours",
+    "title_ar": "ساعات عمل الأحداث",
+    "category": "work_schedule",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "تخضع ساعات عمل الأحداث لقيود خاصة وفق النظام.",
+    "keywords": "ساعات عمل الأحداث; juvenile working hours",
+    "reference": "المادة 164 بعد المائة"
+  },
+  {
+    "field": "no_overtime_for_part_time",
+    "title_ar": "عدم جواز تكليف بعض الوقت خارج الدوام",
+    "category": "work_schedule",
+    "required": "لا",
+    "risk_if_missing": "تكليف مخالف لطبيعة العقد",
+    "description": "لا يجوز تكليف العامل لبعض الوقت خارج وقت الدوام أو انتدابه",
+    "keywords": "بعض الوقت، إضافي",
+    "reference": "نموذج عقد لبعض الوقت"
+  },
+  {
+    "field": "overtime_pay_rules",
+    "title_ar": "أجر العمل الإضافي",
+    "category": "work_schedule",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يستحق العامل مقابلاً عن ساعات العمل الإضافية وفق النظام.",
+    "keywords": "عمل إضافي; overtime pay; extra hours",
+    "reference": "المادة 107"
+  },
+  {
+    "field": "overtime_work",
+    "title_ar": "العمل الإضافي",
+    "category": "work_schedule",
+    "required": "لا",
+    "risk_if_missing": "تشغيل زائد دون تعويض",
+    "description": "تنظيم ساعات العمل الإضافية",
+    "keywords": "إضافي، overtime",
+    "reference": "المادة 22"
+  },
+  {
+    "field": "ramadan_working_hours",
+    "title_ar": "تنظيم ساعات العمل في رمضان",
+    "category": "work_schedule",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "تخفض ساعات العمل خلال شهر رمضان للمسلمين وفق النظام.",
+    "keywords": "رمضان; ساعات العمل في رمضان; ramadan working hours",
+    "reference": "المادة 98"
+  },
+  {
+    "field": "rest_days_per_week",
+    "title_ar": "أيام الراحة الأسبوعية",
+    "category": "work_schedule",
+    "required": "نعم",
+    "risk_if_missing": "نزاع حول الراحة الأسبوعية",
+    "description": "تحديد عدد أيام الراحة الأسبوعية المستحقة للعامل",
+    "keywords": "راحة، weekly rest",
+    "reference": "نموذج عقد العمل – البند 7"
+  },
+  {
+    "field": "weekly_rest_day_rules",
+    "title_ar": "الراحة الأسبوعية",
+    "category": "work_schedule",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يستحق العامل يوماً للراحة الأسبوعية وفق ضوابط النظام.",
+    "keywords": "الراحة الأسبوعية; weekly rest day",
+    "reference": "المادة 104"
+  },
+  {
+    "field": "weekly_working_hours_limit",
+    "title_ar": "الحد الأقصى لساعات العمل الأسبوعية",
+    "category": "work_schedule",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "لا يجوز تجاوز الحد الأقصى لساعات العمل الأسبوعية إلا وفق النظام.",
+    "keywords": "ساعات العمل الأسبوعية; weekly working hours",
+    "reference": "المادة 98"
+  },
+  {
+    "field": "work_schedule_display",
+    "title_ar": "إعلان جدول العمل في مكان ظاهر",
+    "category": "work_schedule",
+    "required": false,
+    "risk_if_missing": "low",
+    "description": "يجب على صاحب العمل عرض جدول العمل وساعات العمل والراحة في مكان ظاهر.",
+    "keywords": "جدول العمل; ساعات العمل; work schedule display",
+    "reference": "المادة 17"
+  },
+  {
+    "field": "working_hours_daily",
+    "title_ar": "ساعات العمل",
+    "category": "work_schedule",
+    "required": "نعم",
+    "risk_if_missing": "تشغيل العامل أكثر من الحد النظامي واستحقاق أجور إضافية",
+    "description": "تحديد ساعات العمل بما لا يتجاوز الحد النظامي، مثل 8 ساعات يومياً أو 48 ساعة أسبوعياً، مع مراعاة الراحة الأسبوعية وأحكام العمل الإضافي.",
+    "keywords": "ساعات، دوام، يومياً، أسبوعياً، إضافي",
+    "reference": "المادة 23، المادة 26"
+  },
+  {
+    "field": "termination_due_to_absence",
+    "title_ar": "إنهاء العقد بسبب الغياب",
+    "category": "termination_exit",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يجوز إنهاء عقد العامل إذا تغيب دون سبب مشروع أكثر من 30 يوماً خلال السنة أو أكثر من 15 يوماً متتالية بعد إنذاره.",
+    "keywords": "الغياب; فصل بسبب الغياب; absence termination; article 80",
+    "reference": "المادة 80"
+  },
+  {
+    "field": "max_work_hours",
+    "title_ar": "الحد الأقصى لساعات العمل",
+    "category": "work_schedule",
+    "required": true,
+    "risk_if_missing": "high",
+    "description": "لا يجوز تشغيل العامل أكثر من 8 ساعات يومياً أو 48 ساعة أسبوعياً وفق نظام العمل.",
+    "keywords": "ساعات العمل; working hours; maximum hours; article 98",
+    "reference": "المادة 98"
+  },
+  {
+    "field": "overtime_pay",
+    "title_ar": "أجر العمل الإضافي",
+    "category": "compensation",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يستحق العامل أجر ساعات العمل الإضافية بما يعادل أجر الساعة مضافاً إليه 50٪ من الأجر الأساسي.",
+    "keywords": "عمل إضافي; overtime pay; extra hours; article 107",
+    "reference": "المادة 107"
+  },
+  {
+    "field": "annual_leave",
+    "title_ar": "الإجازة السنوية",
+    "category": "leave_benefits",
+    "required": false,
+    "risk_if_missing": "medium",
+    "description": "يستحق العامل إجازة سنوية لا تقل عن 21 يوماً وتزيد إلى 30 يوماً إذا أمضى خمس سنوات في الخدمة.",
+    "keywords": "إجازة سنوية; annual leave; vacation; article 109",
+    "reference": "المادة 109"
+  },
+  {
+    "field": "social_insurance_registration",
+    "title_ar": "التسجيل في التأمينات الاجتماعية",
+    "category": "legal_compliance",
+    "required": false,
+    "risk_if_missing": "high",
+    "description": "يلتزم صاحب العمل بتسجيل العامل في المؤسسة العامة للتأمينات الاجتماعية وفق الأنظمة المعمول بها.",
+    "keywords": "تأمينات اجتماعية; social insurance; gosi registration",
+    "reference": "نظام التأمينات الاجتماعية"
+  }
+]
