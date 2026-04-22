@@ -136,7 +136,7 @@ export function App() {
     } catch (error) {
       console.error('Analysis failed', error);
       setCurrentView('upload');
-      alert('حدث خطأ أثناء تحليل الملف. يرجى المحاولة مرة أخرى.');
+      alert((error instanceof Error ? error.message : null) || 'حدث خطأ أثناء تحليل الملف. يرجى المحاولة مرة أخرى.');
     }
   };
 

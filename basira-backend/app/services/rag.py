@@ -234,7 +234,6 @@ ANALYSIS_SUFFIX = """
 ## البنود الإيجابية
 لكل بند إيجابي اكتب بهذا الشكل بالضبط:
 
-ابحث بعناية وأخرج لا يقل عن 4 بنود إيجابية — حتى لو كانت بنوداً عادية تتوافق مع الأنظمة.
 **[موضوع البند بكلمتين أو ثلاث — مثال: شروط التجديد | الغرامات المالية]**
 السبب: [جملتان: الأولى تشرح ما يحميه هذا البند لصالحك، والثانية تذكر النظام أو المادة السعودية التي يتوافق معها — مثال: البند يضمن حقك في إشعار مسبق 30 يوماً قبل إنهاء العقد. يتوافق مع المادة 75 من نظام العمل التي تُلزم بالإشعار المسبق.]
 نص البند: [انسخ نص البند كاملاً من العقد كما هو بدون أي تعديل أو اختصار]
@@ -259,7 +258,47 @@ def get_persona(namespace: str) -> tuple[str, str]:
     elif namespace == NS_NDA:   return JOUD_SYSTEM, "جود"
     else:                       return BOTH_SYSTEM, "الفريق القانوني"
 
+CONTRACT_REQUIRED = {
+    "labor": {
+        "name": "عقد العمل",
+        "groups": [
+            ["صاحب العمل", "جهة العمل", "المنشأة", "الشركة"],
+            ["الموظف", "العامل", "المستخدم", "الطرف الثاني"],
+            ["الراتب", "الأجر", "المرتب", "التعويض الشهري"],
+        ],
+    },
+    "rent": {
+        "name": "عقد الإيجار",
+        "groups": [
+            ["المؤجر", "الطرف المؤجر", "صاحب العقار"],
+            ["المستأجر", "الطرف المستأجر"],
+            ["الإيجار", "القيمة الإيجارية", "الأجرة"],
+        ],
+    },
+    "nda": {
+        "name": "اتفاقية السرية",
+        "groups": [
+            ["السرية", "المعلومات السرية", "الإفصاح", "confidential"],
+            ["الطرف", "الملتزم", "المتلقي", "party"],
+        ],
+    },
+}
 
+def validate_contract_elements(text: str, namespace: str) -> str | None:
+    req = CONTRACT_REQUIRED.get(namespace)
+    if not req:
+        return None
+    missing = []
+    for group in req["groups"]:
+        if not any(kw in text for kw in group):
+            missing.append(group[0])
+    if missing:
+        return (
+            f"الملف لا يبدو {req['name']} مكتملاً — "
+            f"لم نجد: {' أو '.join(missing)}. "
+            "يرجى التأكد من رفع العقد الصحيح."
+        )
+    return None
 def detect_namespace(query: str) -> str:
     rent_keywords = [
         "إيجار","مستأجر","مؤجر","إخلاء","عقار",
@@ -287,8 +326,30 @@ def detect_namespace(query: str) -> str:
 
 
 def detect_contract_type(text: str) -> str:
+    try:
+        resp = _sync_client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": (
+                    "أنت مصنّف عقود دقيق. اقرأ النص وأجب بكلمة واحدة فقط:\n"
+                    "- labor  → فقط عقد توظيف مباشر: راتب شهري + صاحب عمل + موظف فعلي.\n"
+                    "- rent   → فقط عقد إيجار عقار: سكن أو محل تجاري.\n"
+                    "- nda    → فقط اتفاقية سرية أو عدم إفصاح.\n"
+                    "- other  → أي شيء آخر: توريد، مقاولة، خدمات، بيع، شراكة، إلخ.\n"
+                    "تنبيه: عقود التوريد والخدمات هي other حتى لو ذكرت كلمة عمل أو عمال.\n"
+                    "أجب بكلمة واحدة فقط: labor أو rent أو nda أو other"
+                )},
+                {"role": "user", "content": text[:1500]},
+            ],
+            temperature=0,
+            max_tokens=10,
+        )
+        label = resp.choices[0].message.content.strip().lower()
+        if label in ("rent", "labor", "nda", "other"):
+            return label
+    except Exception:
+        pass
     return detect_namespace(text[:1000])
-
 
 @retry(
     retry=retry_if_exception_type((openai.RateLimitError, openai.APIError)),
