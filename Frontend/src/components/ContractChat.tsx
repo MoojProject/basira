@@ -182,30 +182,7 @@ export function ContractChat({
           </div>
         </div>
  
-        <div className="px-6 py-4 border-t border-eclipse-3 bg-eclipse/50 rounded-b-2xl">
-          <div className="opacity-60 pointer-events-none">
-            <SuggestedQuestions
-              questions={contractChatSuggestions}
-              onSelect={() => {}}
-            />
-            <div className="relative mt-4">
-              <input
-                type="text"
-                value=""
-                readOnly
-                placeholder="سجّل دخولك لتسأل عن هذا العقد..."
-                className="w-full bg-eclipse border border-eclipse-3 rounded-xl py-2.5 pr-4 pl-12 text-cream placeholder-cream-muted focus:outline-none transition-all text-sm cursor-not-allowed"
-                disabled
-              />
-              <button
-                disabled
-                className="absolute left-2 top-1/2 -translate-y-1/2 p-2.5 bg-matcha text-eclipse rounded-lg opacity-50 cursor-not-allowed"
-              >
-                <SendIcon className="w-4 h-4 rtl:-scale-x-100" />
-              </button>
-            </div>
-          </div>
-        </div>
+
       </div>
     );
   }
