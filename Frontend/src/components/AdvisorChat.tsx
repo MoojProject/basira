@@ -187,6 +187,8 @@ export function AdvisorChat({ user, onOpenAuth }: AdvisorChatProps) {
               onOpenAuth={onOpenAuth}
               advisorGreeting={activeAdvisor.greeting}
               advisorName={activeAdvisor.name}
+                namespace={activeAdvisor.namespace}
+
               suggestions={advisorSuggestions[activeAdvisor.id]}
             />
 

@@ -208,4 +208,3 @@ async def delete_contract(
     if not contract:
         raise HTTPException(404, "العقد غير موجود.")
     await db.delete(contract)
-
