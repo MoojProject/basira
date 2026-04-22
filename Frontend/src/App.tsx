@@ -8,7 +8,7 @@ import { HeroSection } from './components/HeroSection';
 import { Dashboard } from './components/Dashboard';
 import { FeaturesSection } from './components/FeaturesSection';
 import { WhyBasiraSection } from './components/WhyBasiraSection';
-import { PricingSection } from './components/PricingSection';
+
 import { UploadArea } from './components/UploadArea';
 import { AnalysisSummary } from './components/AnalysisSummary';
 import { ClauseList } from './components/ClauseList';
@@ -195,7 +195,6 @@ export function App() {
                 <FeaturesSection />
                 <WhyBasiraSection />
                 {/* صفحة الأسعار — تظهر فقط قبل تسجيل الدخول */}
-                <PricingSection />
               </>
             )}
           </motion.div>
